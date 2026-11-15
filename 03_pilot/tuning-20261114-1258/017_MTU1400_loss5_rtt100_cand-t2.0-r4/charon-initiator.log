@@ -1,0 +1,1355 @@
+Nov 14 13:40:05 initiator charon-systemd[104578]: loaded IKE shared key with id 'ike-psk' for: 'initiator', 'responder'
+Nov 14 13:40:05 initiator charon-systemd[104578]: updated vici connection: net-net
+Nov 14 13:40:12 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:12 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:12 initiator charon-systemd[104578]: initiating IKE_SA net-net[1] to 10.97.0.206
+Nov 14 13:40:12 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:12 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:12 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:12 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:12 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:12 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:12 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:13 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:13 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:13 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:13 initiator charon-systemd[104578]: establishing CHILD_SA net-net{1}
+Nov 14 13:40:13 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:13 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:13 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:13 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:13 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:13 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:13 initiator charon-systemd[104578]: IKE_SA net-net[1] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:13 initiator charon-systemd[104578]: scheduling rekeying in 13794s
+Nov 14 13:40:13 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15234s
+Nov 14 13:40:13 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:13 initiator charon-systemd[104578]: CHILD_SA net-net{1} established with SPIs ce4e2c86_i cfff9beb_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:13 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:13 initiator charon-systemd[104578]: deleting IKE_SA net-net[1] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:13 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[1]
+Nov 14 13:40:13 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:13 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:13 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:13 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:13 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:14 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:14 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:14 initiator charon-systemd[104578]: initiating IKE_SA net-net[2] to 10.97.0.206
+Nov 14 13:40:14 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:14 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:16 initiator charon-systemd[104578]: retransmit 1 of request with message ID 0
+Nov 14 13:40:16 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:16 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:16 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:16 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:16 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:16 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:16 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:16 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:16 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:16 initiator charon-systemd[104578]: establishing CHILD_SA net-net{2}
+Nov 14 13:40:16 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:16 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:16 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:16 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:16 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:16 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:16 initiator charon-systemd[104578]: IKE_SA net-net[2] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:16 initiator charon-systemd[104578]: scheduling rekeying in 14120s
+Nov 14 13:40:16 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15560s
+Nov 14 13:40:16 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:16 initiator charon-systemd[104578]: CHILD_SA net-net{2} established with SPIs c45d3efd_i c93b5b03_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:16 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:16 initiator charon-systemd[104578]: deleting IKE_SA net-net[2] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:16 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[2]
+Nov 14 13:40:16 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:16 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:16 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:16 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:16 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:17 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:17 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:17 initiator charon-systemd[104578]: initiating IKE_SA net-net[3] to 10.97.0.206
+Nov 14 13:40:17 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:17 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:17 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:17 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:17 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:17 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:17 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:18 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:18 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:18 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:18 initiator charon-systemd[104578]: establishing CHILD_SA net-net{3}
+Nov 14 13:40:18 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:18 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:18 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:18 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:18 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:18 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:18 initiator charon-systemd[104578]: IKE_SA net-net[3] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:18 initiator charon-systemd[104578]: scheduling rekeying in 13187s
+Nov 14 13:40:18 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14627s
+Nov 14 13:40:18 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:18 initiator charon-systemd[104578]: CHILD_SA net-net{3} established with SPIs c588d66e_i c97ad96e_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:18 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:18 initiator charon-systemd[104578]: deleting IKE_SA net-net[3] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:18 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[3]
+Nov 14 13:40:18 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:18 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:18 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:18 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:18 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:19 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:19 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:19 initiator charon-systemd[104578]: initiating IKE_SA net-net[4] to 10.97.0.206
+Nov 14 13:40:19 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:19 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:19 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:19 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:19 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:19 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:19 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:19 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:19 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:19 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:19 initiator charon-systemd[104578]: establishing CHILD_SA net-net{4}
+Nov 14 13:40:19 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:19 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:19 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:19 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:19 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:19 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:19 initiator charon-systemd[104578]: IKE_SA net-net[4] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:19 initiator charon-systemd[104578]: scheduling rekeying in 14154s
+Nov 14 13:40:19 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15594s
+Nov 14 13:40:19 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:19 initiator charon-systemd[104578]: CHILD_SA net-net{4} established with SPIs c012cd2c_i c8c94573_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:19 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:19 initiator charon-systemd[104578]: deleting IKE_SA net-net[4] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:19 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[4]
+Nov 14 13:40:19 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:19 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:19 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:19 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:19 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:20 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:20 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:20 initiator charon-systemd[104578]: initiating IKE_SA net-net[5] to 10.97.0.206
+Nov 14 13:40:20 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:20 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:22 initiator charon-systemd[104578]: retransmit 1 of request with message ID 0
+Nov 14 13:40:22 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:22 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:22 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:22 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:22 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:22 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:22 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:22 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:22 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:22 initiator charon-systemd[104578]: establishing CHILD_SA net-net{5}
+Nov 14 13:40:22 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:22 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:23 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:23 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:23 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:23 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:23 initiator charon-systemd[104578]: IKE_SA net-net[5] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:23 initiator charon-systemd[104578]: scheduling rekeying in 14362s
+Nov 14 13:40:23 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15802s
+Nov 14 13:40:23 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:23 initiator charon-systemd[104578]: CHILD_SA net-net{5} established with SPIs c4c65247_i c771abae_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:23 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:23 initiator charon-systemd[104578]: deleting IKE_SA net-net[5] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:23 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[5]
+Nov 14 13:40:23 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:23 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:23 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:23 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:23 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:24 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:24 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:24 initiator charon-systemd[104578]: initiating IKE_SA net-net[6] to 10.97.0.206
+Nov 14 13:40:24 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:24 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:24 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:24 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:24 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:24 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:24 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:24 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:24 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:24 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:24 initiator charon-systemd[104578]: establishing CHILD_SA net-net{6}
+Nov 14 13:40:24 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:24 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:24 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:24 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:24 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:24 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:24 initiator charon-systemd[104578]: IKE_SA net-net[6] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:24 initiator charon-systemd[104578]: scheduling rekeying in 13788s
+Nov 14 13:40:24 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15228s
+Nov 14 13:40:24 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:24 initiator charon-systemd[104578]: CHILD_SA net-net{6} established with SPIs cfeb15a3_i c957053b_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:24 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:24 initiator charon-systemd[104578]: deleting IKE_SA net-net[6] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:24 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[6]
+Nov 14 13:40:24 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:24 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:24 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:24 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:24 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:25 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:25 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:25 initiator charon-systemd[104578]: initiating IKE_SA net-net[7] to 10.97.0.206
+Nov 14 13:40:25 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:25 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:25 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:25 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:25 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:25 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:25 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:25 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:25 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:25 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:25 initiator charon-systemd[104578]: establishing CHILD_SA net-net{7}
+Nov 14 13:40:25 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:25 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:25 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:25 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:25 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:25 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:25 initiator charon-systemd[104578]: IKE_SA net-net[7] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:25 initiator charon-systemd[104578]: scheduling rekeying in 13561s
+Nov 14 13:40:25 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15001s
+Nov 14 13:40:25 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:25 initiator charon-systemd[104578]: CHILD_SA net-net{7} established with SPIs c880c1fa_i c60defe7_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:25 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:25 initiator charon-systemd[104578]: deleting IKE_SA net-net[7] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:25 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[7]
+Nov 14 13:40:25 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:25 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:27 initiator charon-systemd[104578]: retransmit 1 of request with message ID 3
+Nov 14 13:40:27 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:28 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:28 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:28 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:29 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:29 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:29 initiator charon-systemd[104578]: initiating IKE_SA net-net[8] to 10.97.0.206
+Nov 14 13:40:29 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:29 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:29 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:29 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:29 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:29 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:29 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:29 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:29 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:29 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:29 initiator charon-systemd[104578]: establishing CHILD_SA net-net{8}
+Nov 14 13:40:29 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:29 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:29 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:29 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:29 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:29 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:29 initiator charon-systemd[104578]: IKE_SA net-net[8] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:29 initiator charon-systemd[104578]: scheduling rekeying in 13246s
+Nov 14 13:40:29 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14686s
+Nov 14 13:40:29 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:29 initiator charon-systemd[104578]: CHILD_SA net-net{8} established with SPIs ce710abc_i c3cedfb0_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:29 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:29 initiator charon-systemd[104578]: deleting IKE_SA net-net[8] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:29 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[8]
+Nov 14 13:40:29 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:29 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:29 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:29 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:29 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:30 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:30 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:30 initiator charon-systemd[104578]: initiating IKE_SA net-net[9] to 10.97.0.206
+Nov 14 13:40:30 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:30 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:30 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:30 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:30 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:30 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:30 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:30 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:30 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:30 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:30 initiator charon-systemd[104578]: establishing CHILD_SA net-net{9}
+Nov 14 13:40:30 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:30 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:30 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:30 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:30 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:30 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:30 initiator charon-systemd[104578]: IKE_SA net-net[9] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:30 initiator charon-systemd[104578]: scheduling rekeying in 13720s
+Nov 14 13:40:30 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15160s
+Nov 14 13:40:30 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:30 initiator charon-systemd[104578]: CHILD_SA net-net{9} established with SPIs cd3217a8_i c36ec440_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:30 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:30 initiator charon-systemd[104578]: deleting IKE_SA net-net[9] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:30 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[9]
+Nov 14 13:40:30 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:30 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:31 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:31 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:31 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:32 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:32 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:32 initiator charon-systemd[104578]: initiating IKE_SA net-net[10] to 10.97.0.206
+Nov 14 13:40:32 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:32 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:32 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:32 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:32 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:32 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:32 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:34 initiator charon-systemd[104578]: retransmit 1 of request with message ID 1
+Nov 14 13:40:34 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:34 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:34 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:34 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:34 initiator charon-systemd[104578]: establishing CHILD_SA net-net{10}
+Nov 14 13:40:34 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:34 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:34 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:34 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:34 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:34 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:34 initiator charon-systemd[104578]: IKE_SA net-net[10] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:34 initiator charon-systemd[104578]: scheduling rekeying in 13087s
+Nov 14 13:40:34 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14527s
+Nov 14 13:40:34 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:34 initiator charon-systemd[104578]: CHILD_SA net-net{10} established with SPIs cff09da3_i c672ae68_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:34 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:34 initiator charon-systemd[104578]: deleting IKE_SA net-net[10] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:34 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[10]
+Nov 14 13:40:34 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:34 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:34 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:34 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:34 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:35 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:35 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:35 initiator charon-systemd[104578]: initiating IKE_SA net-net[11] to 10.97.0.206
+Nov 14 13:40:35 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:35 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:35 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:35 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:35 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:35 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:35 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:35 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:35 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:35 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:35 initiator charon-systemd[104578]: establishing CHILD_SA net-net{11}
+Nov 14 13:40:35 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:35 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:35 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:35 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:35 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:35 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:35 initiator charon-systemd[104578]: IKE_SA net-net[11] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:35 initiator charon-systemd[104578]: scheduling rekeying in 14033s
+Nov 14 13:40:35 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15473s
+Nov 14 13:40:35 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:35 initiator charon-systemd[104578]: CHILD_SA net-net{11} established with SPIs c34af88f_i c3b28609_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:35 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:35 initiator charon-systemd[104578]: deleting IKE_SA net-net[11] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:35 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[11]
+Nov 14 13:40:35 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:35 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:35 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:35 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:35 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:36 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:36 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:36 initiator charon-systemd[104578]: initiating IKE_SA net-net[12] to 10.97.0.206
+Nov 14 13:40:36 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:36 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:37 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:37 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:37 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:37 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:37 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:37 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:37 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:37 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:37 initiator charon-systemd[104578]: establishing CHILD_SA net-net{12}
+Nov 14 13:40:37 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:37 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:37 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:37 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:37 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:37 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:37 initiator charon-systemd[104578]: IKE_SA net-net[12] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:37 initiator charon-systemd[104578]: scheduling rekeying in 12992s
+Nov 14 13:40:37 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14432s
+Nov 14 13:40:37 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:37 initiator charon-systemd[104578]: CHILD_SA net-net{12} established with SPIs c0b75bc5_i c6c33fee_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:37 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:37 initiator charon-systemd[104578]: deleting IKE_SA net-net[12] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:37 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[12]
+Nov 14 13:40:37 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:37 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:39 initiator charon-systemd[104578]: retransmit 1 of request with message ID 3
+Nov 14 13:40:39 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:39 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:39 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:39 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:40 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:40 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:40 initiator charon-systemd[104578]: initiating IKE_SA net-net[13] to 10.97.0.206
+Nov 14 13:40:40 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:40 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:42 initiator charon-systemd[104578]: retransmit 1 of request with message ID 0
+Nov 14 13:40:42 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:42 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:42 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:42 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:42 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:42 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:42 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:42 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:42 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:42 initiator charon-systemd[104578]: establishing CHILD_SA net-net{13}
+Nov 14 13:40:42 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:42 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:44 initiator charon-systemd[104578]: retransmit 1 of request with message ID 2
+Nov 14 13:40:44 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:44 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:44 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:44 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:44 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:44 initiator charon-systemd[104578]: IKE_SA net-net[13] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:44 initiator charon-systemd[104578]: scheduling rekeying in 13619s
+Nov 14 13:40:44 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15059s
+Nov 14 13:40:44 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:44 initiator charon-systemd[104578]: CHILD_SA net-net{13} established with SPIs ca7cdeae_i c6290367_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:44 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:44 initiator charon-systemd[104578]: deleting IKE_SA net-net[13] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:44 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[13]
+Nov 14 13:40:44 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:44 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:46 initiator charon-systemd[104578]: retransmit 1 of request with message ID 3
+Nov 14 13:40:46 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:46 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:46 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:46 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:47 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:47 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:47 initiator charon-systemd[104578]: initiating IKE_SA net-net[14] to 10.97.0.206
+Nov 14 13:40:47 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:47 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:48 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:48 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:48 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:48 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:48 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:48 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:48 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:48 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:48 initiator charon-systemd[104578]: establishing CHILD_SA net-net{14}
+Nov 14 13:40:48 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:48 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:48 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:48 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:48 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:48 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:48 initiator charon-systemd[104578]: IKE_SA net-net[14] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:48 initiator charon-systemd[104578]: scheduling rekeying in 13941s
+Nov 14 13:40:48 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15381s
+Nov 14 13:40:48 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:48 initiator charon-systemd[104578]: CHILD_SA net-net{14} established with SPIs c67c0d45_i c964aa87_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:48 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:48 initiator charon-systemd[104578]: deleting IKE_SA net-net[14] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:48 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[14]
+Nov 14 13:40:48 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:48 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:48 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:48 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:48 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:49 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:49 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:49 initiator charon-systemd[104578]: initiating IKE_SA net-net[15] to 10.97.0.206
+Nov 14 13:40:49 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:49 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:51 initiator charon-systemd[104578]: retransmit 1 of request with message ID 0
+Nov 14 13:40:51 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:51 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:51 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:51 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:51 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:51 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:51 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:51 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:51 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:51 initiator charon-systemd[104578]: establishing CHILD_SA net-net{15}
+Nov 14 13:40:51 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:51 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:51 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:51 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:51 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:51 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:51 initiator charon-systemd[104578]: IKE_SA net-net[15] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:51 initiator charon-systemd[104578]: scheduling rekeying in 14172s
+Nov 14 13:40:51 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15612s
+Nov 14 13:40:51 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:51 initiator charon-systemd[104578]: CHILD_SA net-net{15} established with SPIs cb02deb3_i c352eee2_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:51 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:51 initiator charon-systemd[104578]: deleting IKE_SA net-net[15] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:51 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[15]
+Nov 14 13:40:51 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:51 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:51 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:51 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:51 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:52 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:52 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:52 initiator charon-systemd[104578]: initiating IKE_SA net-net[16] to 10.97.0.206
+Nov 14 13:40:52 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:52 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:54 initiator charon-systemd[104578]: retransmit 1 of request with message ID 0
+Nov 14 13:40:54 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:54 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:54 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:54 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:54 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:54 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:55 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:55 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:55 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:55 initiator charon-systemd[104578]: establishing CHILD_SA net-net{16}
+Nov 14 13:40:55 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:55 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:55 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:55 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:55 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:55 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:55 initiator charon-systemd[104578]: IKE_SA net-net[16] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:55 initiator charon-systemd[104578]: scheduling rekeying in 14132s
+Nov 14 13:40:55 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15572s
+Nov 14 13:40:55 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:55 initiator charon-systemd[104578]: CHILD_SA net-net{16} established with SPIs c2ea498e_i c0c09ad8_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:55 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:55 initiator charon-systemd[104578]: deleting IKE_SA net-net[16] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:55 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[16]
+Nov 14 13:40:55 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:55 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:55 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:55 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:55 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:56 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:56 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:56 initiator charon-systemd[104578]: initiating IKE_SA net-net[17] to 10.97.0.206
+Nov 14 13:40:56 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:56 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:40:56 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:40:56 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:40:56 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:40:56 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:40:56 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:40:56 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:40:56 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:40:56 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:40:56 initiator charon-systemd[104578]: establishing CHILD_SA net-net{17}
+Nov 14 13:40:56 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:40:56 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:58 initiator charon-systemd[104578]: retransmit 1 of request with message ID 2
+Nov 14 13:40:58 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:40:58 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:40:58 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:40:58 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:40:58 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:40:58 initiator charon-systemd[104578]: IKE_SA net-net[17] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:58 initiator charon-systemd[104578]: scheduling rekeying in 13319s
+Nov 14 13:40:58 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14759s
+Nov 14 13:40:58 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:40:58 initiator charon-systemd[104578]: CHILD_SA net-net{17} established with SPIs c53cef11_i cd20d37a_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:40:58 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:58 initiator charon-systemd[104578]: deleting IKE_SA net-net[17] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:40:58 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[17]
+Nov 14 13:40:58 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:40:58 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:40:58 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:40:58 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:40:58 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:40:59 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:40:59 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:40:59 initiator charon-systemd[104578]: initiating IKE_SA net-net[18] to 10.97.0.206
+Nov 14 13:40:59 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:40:59 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:01 initiator charon-systemd[104578]: retransmit 1 of request with message ID 0
+Nov 14 13:41:01 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:01 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:01 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:01 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:01 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:01 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:01 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:01 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:01 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:01 initiator charon-systemd[104578]: establishing CHILD_SA net-net{18}
+Nov 14 13:41:01 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:01 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:02 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:02 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:02 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:02 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:02 initiator charon-systemd[104578]: IKE_SA net-net[18] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:02 initiator charon-systemd[104578]: scheduling rekeying in 13069s
+Nov 14 13:41:02 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14509s
+Nov 14 13:41:02 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:02 initiator charon-systemd[104578]: CHILD_SA net-net{18} established with SPIs ca622042_i c8aee12e_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:02 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:02 initiator charon-systemd[104578]: deleting IKE_SA net-net[18] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:02 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[18]
+Nov 14 13:41:02 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:02 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:02 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:02 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:02 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:03 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:03 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:03 initiator charon-systemd[104578]: initiating IKE_SA net-net[19] to 10.97.0.206
+Nov 14 13:41:03 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:03 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:03 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:03 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:03 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:03 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:03 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:03 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:03 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:03 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:03 initiator charon-systemd[104578]: establishing CHILD_SA net-net{19}
+Nov 14 13:41:03 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:03 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:03 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:03 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:03 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:03 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:03 initiator charon-systemd[104578]: IKE_SA net-net[19] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:03 initiator charon-systemd[104578]: scheduling rekeying in 13113s
+Nov 14 13:41:03 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14553s
+Nov 14 13:41:03 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:03 initiator charon-systemd[104578]: CHILD_SA net-net{19} established with SPIs cbbc24e2_i c2a24b2d_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:03 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:03 initiator charon-systemd[104578]: deleting IKE_SA net-net[19] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:03 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[19]
+Nov 14 13:41:03 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:03 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:03 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:03 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:03 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:04 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:04 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:04 initiator charon-systemd[104578]: initiating IKE_SA net-net[20] to 10.97.0.206
+Nov 14 13:41:04 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:04 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:04 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:04 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:04 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:04 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:04 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:04 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:04 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:04 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:04 initiator charon-systemd[104578]: establishing CHILD_SA net-net{20}
+Nov 14 13:41:04 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:04 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:05 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:05 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:05 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:05 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:05 initiator charon-systemd[104578]: IKE_SA net-net[20] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:05 initiator charon-systemd[104578]: scheduling rekeying in 14197s
+Nov 14 13:41:05 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15637s
+Nov 14 13:41:05 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:05 initiator charon-systemd[104578]: CHILD_SA net-net{20} established with SPIs c3b5597d_i c35a21dd_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:05 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:05 initiator charon-systemd[104578]: deleting IKE_SA net-net[20] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:05 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[20]
+Nov 14 13:41:05 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:05 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:05 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:05 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:05 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:06 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:06 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:06 initiator charon-systemd[104578]: initiating IKE_SA net-net[21] to 10.97.0.206
+Nov 14 13:41:06 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:06 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:06 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:06 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:06 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:06 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:06 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:06 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:06 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:06 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:06 initiator charon-systemd[104578]: establishing CHILD_SA net-net{21}
+Nov 14 13:41:06 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:06 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:06 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:06 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:06 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:06 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:06 initiator charon-systemd[104578]: IKE_SA net-net[21] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:06 initiator charon-systemd[104578]: scheduling rekeying in 13307s
+Nov 14 13:41:06 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14747s
+Nov 14 13:41:06 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:06 initiator charon-systemd[104578]: CHILD_SA net-net{21} established with SPIs ce371793_i c7e986a4_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:06 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:06 initiator charon-systemd[104578]: deleting IKE_SA net-net[21] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:06 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[21]
+Nov 14 13:41:06 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:06 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:06 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:06 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:06 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:07 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:07 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:07 initiator charon-systemd[104578]: initiating IKE_SA net-net[22] to 10.97.0.206
+Nov 14 13:41:07 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:07 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:07 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:07 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:07 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:07 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:07 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:07 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:07 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:07 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:07 initiator charon-systemd[104578]: establishing CHILD_SA net-net{22}
+Nov 14 13:41:07 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:07 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:07 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:07 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:07 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:07 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:07 initiator charon-systemd[104578]: IKE_SA net-net[22] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:07 initiator charon-systemd[104578]: scheduling rekeying in 14091s
+Nov 14 13:41:07 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15531s
+Nov 14 13:41:07 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:07 initiator charon-systemd[104578]: CHILD_SA net-net{22} established with SPIs cd01e083_i c673540f_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:07 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:07 initiator charon-systemd[104578]: deleting IKE_SA net-net[22] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:07 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[22]
+Nov 14 13:41:07 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:07 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:09 initiator charon-systemd[104578]: retransmit 1 of request with message ID 3
+Nov 14 13:41:09 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:12 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:12 initiator charon-systemd[104578]: destroying IKE_SA in state DELETING without notification
+Nov 14 13:41:13 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:13 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:13 initiator charon-systemd[104578]: initiating IKE_SA net-net[23] to 10.97.0.206
+Nov 14 13:41:13 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:13 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:14 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:14 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:14 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:14 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:14 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:14 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:14 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:14 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:14 initiator charon-systemd[104578]: establishing CHILD_SA net-net{23}
+Nov 14 13:41:14 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:14 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:14 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:14 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:14 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:14 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:14 initiator charon-systemd[104578]: IKE_SA net-net[23] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:14 initiator charon-systemd[104578]: scheduling rekeying in 13784s
+Nov 14 13:41:14 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15224s
+Nov 14 13:41:14 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:14 initiator charon-systemd[104578]: CHILD_SA net-net{23} established with SPIs cb82c719_i c0416414_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:14 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:14 initiator charon-systemd[104578]: deleting IKE_SA net-net[23] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:14 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[23]
+Nov 14 13:41:14 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:14 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:14 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:14 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:14 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:15 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:15 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:15 initiator charon-systemd[104578]: initiating IKE_SA net-net[24] to 10.97.0.206
+Nov 14 13:41:15 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:15 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:15 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:15 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:15 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:15 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:15 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:15 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:15 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:15 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:15 initiator charon-systemd[104578]: establishing CHILD_SA net-net{24}
+Nov 14 13:41:15 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:15 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:15 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:15 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:15 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:15 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:15 initiator charon-systemd[104578]: IKE_SA net-net[24] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:15 initiator charon-systemd[104578]: scheduling rekeying in 13107s
+Nov 14 13:41:15 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14547s
+Nov 14 13:41:15 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:15 initiator charon-systemd[104578]: CHILD_SA net-net{24} established with SPIs cf6b8e9b_i cfc5c008_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:15 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:15 initiator charon-systemd[104578]: deleting IKE_SA net-net[24] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:15 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[24]
+Nov 14 13:41:15 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:15 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:15 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:15 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:15 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:16 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:16 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:16 initiator charon-systemd[104578]: initiating IKE_SA net-net[25] to 10.97.0.206
+Nov 14 13:41:16 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:16 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:17 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:17 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:17 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:17 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:17 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:17 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:17 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:17 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:17 initiator charon-systemd[104578]: establishing CHILD_SA net-net{25}
+Nov 14 13:41:17 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:17 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:17 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:17 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:17 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:17 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:17 initiator charon-systemd[104578]: IKE_SA net-net[25] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:17 initiator charon-systemd[104578]: scheduling rekeying in 13424s
+Nov 14 13:41:17 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14864s
+Nov 14 13:41:17 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:17 initiator charon-systemd[104578]: CHILD_SA net-net{25} established with SPIs c34a816a_i c85e565a_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:17 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:17 initiator charon-systemd[104578]: deleting IKE_SA net-net[25] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:17 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[25]
+Nov 14 13:41:17 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:17 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:17 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:17 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:17 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:18 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:18 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:18 initiator charon-systemd[104578]: initiating IKE_SA net-net[26] to 10.97.0.206
+Nov 14 13:41:18 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:18 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:18 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:18 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:18 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:18 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:18 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:18 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:18 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:18 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:18 initiator charon-systemd[104578]: establishing CHILD_SA net-net{26}
+Nov 14 13:41:18 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:18 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:18 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:18 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:18 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:18 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:18 initiator charon-systemd[104578]: IKE_SA net-net[26] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:18 initiator charon-systemd[104578]: scheduling rekeying in 13871s
+Nov 14 13:41:18 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15311s
+Nov 14 13:41:18 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:18 initiator charon-systemd[104578]: CHILD_SA net-net{26} established with SPIs c709db3b_i c14751c3_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:18 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:18 initiator charon-systemd[104578]: deleting IKE_SA net-net[26] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:18 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[26]
+Nov 14 13:41:18 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:18 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:18 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:18 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:18 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:19 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:19 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:19 initiator charon-systemd[104578]: initiating IKE_SA net-net[27] to 10.97.0.206
+Nov 14 13:41:19 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:19 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:19 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:19 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:19 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:19 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:19 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:20 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:20 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:20 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:20 initiator charon-systemd[104578]: establishing CHILD_SA net-net{27}
+Nov 14 13:41:20 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:20 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:20 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:20 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:20 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:20 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:20 initiator charon-systemd[104578]: IKE_SA net-net[27] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:20 initiator charon-systemd[104578]: scheduling rekeying in 13400s
+Nov 14 13:41:20 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14840s
+Nov 14 13:41:20 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:20 initiator charon-systemd[104578]: CHILD_SA net-net{27} established with SPIs c8a76910_i ccf09bc2_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:20 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:20 initiator charon-systemd[104578]: deleting IKE_SA net-net[27] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:20 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[27]
+Nov 14 13:41:20 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:20 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:20 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:20 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:20 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:21 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:21 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:21 initiator charon-systemd[104578]: initiating IKE_SA net-net[28] to 10.97.0.206
+Nov 14 13:41:21 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:21 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:21 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:21 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:21 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:21 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:21 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:21 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:21 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:21 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:21 initiator charon-systemd[104578]: establishing CHILD_SA net-net{28}
+Nov 14 13:41:21 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:21 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:21 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:21 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:21 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:21 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:21 initiator charon-systemd[104578]: IKE_SA net-net[28] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:21 initiator charon-systemd[104578]: scheduling rekeying in 13426s
+Nov 14 13:41:21 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14866s
+Nov 14 13:41:21 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:21 initiator charon-systemd[104578]: CHILD_SA net-net{28} established with SPIs cd968775_i c455c2ea_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:21 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:21 initiator charon-systemd[104578]: deleting IKE_SA net-net[28] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:21 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[28]
+Nov 14 13:41:21 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:21 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:21 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:21 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:21 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:22 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:22 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:22 initiator charon-systemd[104578]: initiating IKE_SA net-net[29] to 10.97.0.206
+Nov 14 13:41:22 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:22 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:22 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:22 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:22 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:22 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:22 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:22 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:22 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:22 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:22 initiator charon-systemd[104578]: establishing CHILD_SA net-net{29}
+Nov 14 13:41:22 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:22 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:23 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:23 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:23 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:23 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:23 initiator charon-systemd[104578]: IKE_SA net-net[29] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:23 initiator charon-systemd[104578]: scheduling rekeying in 13111s
+Nov 14 13:41:23 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14551s
+Nov 14 13:41:23 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:23 initiator charon-systemd[104578]: CHILD_SA net-net{29} established with SPIs cc858513_i c9bc6882_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:23 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:23 initiator charon-systemd[104578]: deleting IKE_SA net-net[29] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:23 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[29]
+Nov 14 13:41:23 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:23 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:23 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:23 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:23 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:24 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:24 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:24 initiator charon-systemd[104578]: initiating IKE_SA net-net[30] to 10.97.0.206
+Nov 14 13:41:24 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:24 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:24 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:24 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:24 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:24 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:24 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:24 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:24 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:24 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:24 initiator charon-systemd[104578]: establishing CHILD_SA net-net{30}
+Nov 14 13:41:24 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:24 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:24 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:24 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:24 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:24 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:24 initiator charon-systemd[104578]: IKE_SA net-net[30] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:24 initiator charon-systemd[104578]: scheduling rekeying in 13589s
+Nov 14 13:41:24 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15029s
+Nov 14 13:41:24 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:24 initiator charon-systemd[104578]: CHILD_SA net-net{30} established with SPIs c9d126ab_i cdbe2a63_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:24 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:24 initiator charon-systemd[104578]: deleting IKE_SA net-net[30] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:24 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[30]
+Nov 14 13:41:24 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:24 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:24 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:24 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:24 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:25 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:25 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:25 initiator charon-systemd[104578]: initiating IKE_SA net-net[31] to 10.97.0.206
+Nov 14 13:41:25 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:25 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:25 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:25 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:25 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:25 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:25 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:25 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:25 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:25 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:25 initiator charon-systemd[104578]: establishing CHILD_SA net-net{31}
+Nov 14 13:41:25 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:25 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:26 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:26 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:26 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:26 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:26 initiator charon-systemd[104578]: IKE_SA net-net[31] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:26 initiator charon-systemd[104578]: scheduling rekeying in 13404s
+Nov 14 13:41:26 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14844s
+Nov 14 13:41:26 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:26 initiator charon-systemd[104578]: CHILD_SA net-net{31} established with SPIs cc122e66_i c4a403dc_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:26 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:26 initiator charon-systemd[104578]: deleting IKE_SA net-net[31] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:26 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[31]
+Nov 14 13:41:26 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:26 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:26 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:26 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:26 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:27 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:27 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:27 initiator charon-systemd[104578]: initiating IKE_SA net-net[32] to 10.97.0.206
+Nov 14 13:41:27 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:27 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:29 initiator charon-systemd[104578]: retransmit 1 of request with message ID 0
+Nov 14 13:41:29 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:29 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:29 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:29 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:29 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:29 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:29 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:29 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:29 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:29 initiator charon-systemd[104578]: establishing CHILD_SA net-net{32}
+Nov 14 13:41:29 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:29 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:29 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:29 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:29 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:29 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:29 initiator charon-systemd[104578]: IKE_SA net-net[32] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:29 initiator charon-systemd[104578]: scheduling rekeying in 13518s
+Nov 14 13:41:29 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14958s
+Nov 14 13:41:29 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:29 initiator charon-systemd[104578]: CHILD_SA net-net{32} established with SPIs c47c7131_i cdf8a06a_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:29 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:29 initiator charon-systemd[104578]: deleting IKE_SA net-net[32] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:29 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[32]
+Nov 14 13:41:29 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:29 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:29 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:29 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:29 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:30 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:30 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:30 initiator charon-systemd[104578]: initiating IKE_SA net-net[33] to 10.97.0.206
+Nov 14 13:41:30 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:30 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:30 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:30 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:30 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:30 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:30 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:32 initiator charon-systemd[104578]: retransmit 1 of request with message ID 1
+Nov 14 13:41:32 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:32 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:32 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:32 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:32 initiator charon-systemd[104578]: establishing CHILD_SA net-net{33}
+Nov 14 13:41:32 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:32 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:32 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:32 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:32 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:32 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:32 initiator charon-systemd[104578]: IKE_SA net-net[33] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:32 initiator charon-systemd[104578]: scheduling rekeying in 13777s
+Nov 14 13:41:32 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15217s
+Nov 14 13:41:32 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:32 initiator charon-systemd[104578]: CHILD_SA net-net{33} established with SPIs c0c38ba5_i ca491790_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:32 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:32 initiator charon-systemd[104578]: deleting IKE_SA net-net[33] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:32 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[33]
+Nov 14 13:41:32 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:32 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:33 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:33 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:33 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:34 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:34 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:34 initiator charon-systemd[104578]: initiating IKE_SA net-net[34] to 10.97.0.206
+Nov 14 13:41:34 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:34 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:34 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:34 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:34 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:34 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:34 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:34 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:34 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:34 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:34 initiator charon-systemd[104578]: establishing CHILD_SA net-net{34}
+Nov 14 13:41:34 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:34 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:34 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:34 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:34 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:34 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:34 initiator charon-systemd[104578]: IKE_SA net-net[34] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:34 initiator charon-systemd[104578]: scheduling rekeying in 13097s
+Nov 14 13:41:34 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14537s
+Nov 14 13:41:34 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:34 initiator charon-systemd[104578]: CHILD_SA net-net{34} established with SPIs c4c093a3_i cbb2bc44_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:34 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:34 initiator charon-systemd[104578]: deleting IKE_SA net-net[34] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:34 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[34]
+Nov 14 13:41:34 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:34 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:34 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:34 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:34 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:35 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:35 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:35 initiator charon-systemd[104578]: initiating IKE_SA net-net[35] to 10.97.0.206
+Nov 14 13:41:35 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:35 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:35 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:35 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:35 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:35 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:35 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:35 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:35 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:35 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:35 initiator charon-systemd[104578]: establishing CHILD_SA net-net{35}
+Nov 14 13:41:35 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:35 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:35 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:35 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:35 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:35 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:35 initiator charon-systemd[104578]: IKE_SA net-net[35] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:35 initiator charon-systemd[104578]: scheduling rekeying in 13855s
+Nov 14 13:41:35 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15295s
+Nov 14 13:41:35 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:35 initiator charon-systemd[104578]: CHILD_SA net-net{35} established with SPIs c248ebeb_i c070ad97_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:35 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:35 initiator charon-systemd[104578]: deleting IKE_SA net-net[35] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:35 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[35]
+Nov 14 13:41:35 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:35 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:35 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:35 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:35 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:37 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:37 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:37 initiator charon-systemd[104578]: initiating IKE_SA net-net[36] to 10.97.0.206
+Nov 14 13:41:37 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:37 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:37 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:37 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:37 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:37 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:37 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:37 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:37 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:37 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:37 initiator charon-systemd[104578]: establishing CHILD_SA net-net{36}
+Nov 14 13:41:37 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:37 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:37 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:37 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:37 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:37 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:37 initiator charon-systemd[104578]: IKE_SA net-net[36] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:37 initiator charon-systemd[104578]: scheduling rekeying in 13389s
+Nov 14 13:41:37 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14829s
+Nov 14 13:41:37 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:37 initiator charon-systemd[104578]: CHILD_SA net-net{36} established with SPIs ce71e09e_i ce9f7b05_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:37 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:37 initiator charon-systemd[104578]: deleting IKE_SA net-net[36] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:37 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[36]
+Nov 14 13:41:37 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:37 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:37 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:37 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:37 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:38 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:38 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:38 initiator charon-systemd[104578]: initiating IKE_SA net-net[37] to 10.97.0.206
+Nov 14 13:41:38 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:38 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:38 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:38 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:38 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:38 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:38 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:38 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:38 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:38 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:38 initiator charon-systemd[104578]: establishing CHILD_SA net-net{37}
+Nov 14 13:41:38 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:38 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:38 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:38 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:38 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:38 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:38 initiator charon-systemd[104578]: IKE_SA net-net[37] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:38 initiator charon-systemd[104578]: scheduling rekeying in 14094s
+Nov 14 13:41:38 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15534s
+Nov 14 13:41:38 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:38 initiator charon-systemd[104578]: CHILD_SA net-net{37} established with SPIs cb5c49c6_i c3b1fb2f_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:38 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:38 initiator charon-systemd[104578]: deleting IKE_SA net-net[37] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:38 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[37]
+Nov 14 13:41:38 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:38 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:40 initiator charon-systemd[104578]: retransmit 1 of request with message ID 3
+Nov 14 13:41:40 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:40 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:40 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:40 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:41 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:41 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:41 initiator charon-systemd[104578]: initiating IKE_SA net-net[38] to 10.97.0.206
+Nov 14 13:41:41 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:41 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:42 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:42 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:42 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:42 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:42 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:42 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:42 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:42 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:42 initiator charon-systemd[104578]: establishing CHILD_SA net-net{38}
+Nov 14 13:41:42 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:42 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:42 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:42 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:42 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:42 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:42 initiator charon-systemd[104578]: IKE_SA net-net[38] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:42 initiator charon-systemd[104578]: scheduling rekeying in 13563s
+Nov 14 13:41:42 initiator charon-systemd[104578]: maximum IKE_SA lifetime 15003s
+Nov 14 13:41:42 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:42 initiator charon-systemd[104578]: CHILD_SA net-net{38} established with SPIs c3f17985_i c26513bf_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:42 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:42 initiator charon-systemd[104578]: deleting IKE_SA net-net[38] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:42 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[38]
+Nov 14 13:41:42 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:42 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:42 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:42 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:42 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:43 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:43 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:43 initiator charon-systemd[104578]: initiating IKE_SA net-net[39] to 10.97.0.206
+Nov 14 13:41:43 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:43 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:43 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:43 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:43 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:43 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:43 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:43 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:43 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:43 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:43 initiator charon-systemd[104578]: establishing CHILD_SA net-net{39}
+Nov 14 13:41:43 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:43 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:43 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:43 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:43 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:43 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:43 initiator charon-systemd[104578]: IKE_SA net-net[39] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:43 initiator charon-systemd[104578]: scheduling rekeying in 13523s
+Nov 14 13:41:43 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14963s
+Nov 14 13:41:43 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:43 initiator charon-systemd[104578]: CHILD_SA net-net{39} established with SPIs c9f76be5_i cccebf90_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:43 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:43 initiator charon-systemd[104578]: deleting IKE_SA net-net[39] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:43 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[39]
+Nov 14 13:41:43 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:43 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:43 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:43 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:43 initiator charon-systemd[104578]: IKE_SA deleted
+Nov 14 13:41:44 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:44 initiator charon-systemd[104578]: vici initiate CHILD_SA 'net-net'
+Nov 14 13:41:44 initiator charon-systemd[104578]: initiating IKE_SA net-net[40] to 10.97.0.206
+Nov 14 13:41:44 initiator charon-systemd[104578]: generating IKE_SA_INIT request 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(REDIR_SUP) N(IKE_INT_SUP) ]
+Nov 14 13:41:44 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:46 initiator charon-systemd[104578]: retransmit 1 of request with message ID 0
+Nov 14 13:41:46 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[500] to 10.97.0.206[500] (248 bytes)
+Nov 14 13:41:46 initiator charon-systemd[104578]: received packet: from 10.97.0.206[500] to 10.97.0.149[500] (256 bytes)
+Nov 14 13:41:46 initiator charon-systemd[104578]: parsed IKE_SA_INIT response 0 [ SA KE No N(NATD_S_IP) N(NATD_D_IP) N(FRAG_SUP) N(HASH_ALG) N(CHDLESS_SUP) N(IKE_INT_SUP) N(MULT_AUTH) ]
+Nov 14 13:41:46 initiator charon-systemd[104578]: selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+Nov 14 13:41:46 initiator charon-systemd[104578]: generating IKE_INTERMEDIATE request 1 [ KE ]
+Nov 14 13:41:46 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (1249 bytes)
+Nov 14 13:41:47 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (1153 bytes)
+Nov 14 13:41:47 initiator charon-systemd[104578]: parsed IKE_INTERMEDIATE response 1 [ KE ]
+Nov 14 13:41:47 initiator charon-systemd[104578]: authentication of 'initiator' (myself) with pre-shared key
+Nov 14 13:41:47 initiator charon-systemd[104578]: establishing CHILD_SA net-net{40}
+Nov 14 13:41:47 initiator charon-systemd[104578]: generating IKE_AUTH request 2 [ IDi N(INIT_CONTACT) IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) N(MULT_AUTH) N(EAP_ONLY) N(MSG_ID_SYN_SUP) ]
+Nov 14 13:41:47 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (415 bytes)
+Nov 14 13:41:47 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (246 bytes)
+Nov 14 13:41:47 initiator charon-systemd[104578]: parsed IKE_AUTH response 2 [ IDr AUTH SA TSi TSr N(MOBIKE_SUP) N(NO_ADD_ADDR) ]
+Nov 14 13:41:47 initiator charon-systemd[104578]: authentication of 'responder' with pre-shared key successful
+Nov 14 13:41:47 initiator charon-systemd[104578]: peer supports MOBIKE
+Nov 14 13:41:47 initiator charon-systemd[104578]: IKE_SA net-net[40] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:47 initiator charon-systemd[104578]: scheduling rekeying in 13422s
+Nov 14 13:41:47 initiator charon-systemd[104578]: maximum IKE_SA lifetime 14862s
+Nov 14 13:41:47 initiator charon-systemd[104578]: selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+Nov 14 13:41:47 initiator charon-systemd[104578]: CHILD_SA net-net{40} established with SPIs c05208ca_i cebebe08_o and TS 10.97.0.149/32 === 10.97.0.206/32
+Nov 14 13:41:47 initiator charon-systemd[104578]: vici terminate IKE_SA 'net-net'
+Nov 14 13:41:47 initiator charon-systemd[104578]: deleting IKE_SA net-net[40] between 10.97.0.149[initiator]...10.97.0.206[responder]
+Nov 14 13:41:47 initiator charon-systemd[104578]: sending DELETE for IKE_SA net-net[40]
+Nov 14 13:41:47 initiator charon-systemd[104578]: generating INFORMATIONAL request 3 [ D ]
+Nov 14 13:41:47 initiator charon-systemd[104578]: sending packet: from 10.97.0.149[4500] to 10.97.0.206[4500] (65 bytes)
+Nov 14 13:41:47 initiator charon-systemd[104578]: received packet: from 10.97.0.206[4500] to 10.97.0.149[4500] (57 bytes)
+Nov 14 13:41:47 initiator charon-systemd[104578]: parsed INFORMATIONAL response 3 [ ]
+Nov 14 13:41:47 initiator charon-systemd[104578]: IKE_SA deleted

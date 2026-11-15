@@ -1,0 +1,6 @@
+# PENGUKURAN RTT AKTUAL ANTAR-VM (INITIATOR 10.97.0.149 [eth0] -> RESPONDER 10.97.0.206 [eth0])
+Tanggal Ukur: 2026-11-15T03:13:19.2697124+07:00
+Target RTT 0 ms (netem delay 0ms per sisi): 20 packets transmitted, 20 received, 0% packet loss, time 1978ms | rtt min/avg/max/mdev = 0.282/0.426/0.511/0.057 ms
+Target RTT 10 ms (netem delay 5ms per sisi): 20 packets transmitted, 20 received, 0% packet loss, time 1920ms | rtt min/avg/max/mdev = 10.705/11.234/11.581/0.187 ms
+Target RTT 50 ms (netem delay 25ms per sisi): 20 packets transmitted, 20 received, 0% packet loss, time 1920ms | rtt min/avg/max/mdev = 50.720/51.372/51.685/0.253 ms
+Target RTT 100 ms (netem delay 50ms per sisi): 20 packets transmitted, 20 received, 0% packet loss, time 1926ms | rtt min/avg/max/mdev = 100.648/101.306/101.670/0.284 ms, pipe 2

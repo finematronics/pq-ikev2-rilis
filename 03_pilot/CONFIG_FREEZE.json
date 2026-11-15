@@ -1,0 +1,9 @@
+{
+    "tanggal_freeze":  "2026-11-14T13:53:55.5989912+07:00",
+    "peneliti":  "Rafi Rachman",
+    "kandidat_terpilih":  "cand-t2.0-r3",
+    "fragment_size":  "mtu-28 (1252 / 1372 / 1472 untuk MTU 1280 / 1400 / 1500)",
+    "retransmit_timeout":  "2.0",
+    "retransmit_tries":  "3",
+    "sumber_folder":  "03_pilot\\tuning-20261114-1258"
+}

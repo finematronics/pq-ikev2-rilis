@@ -1,0 +1,11 @@
+# Simpan transkrip.txt & metadata-percobaan.txt mentah secara utuh di lokal; repo hanya memuat versi *-sanitasi.txt
+**/transkrip.txt
+**/metadata-percobaan.txt
+EVALUASI-*.csv
+EVALUASI-*.txt
+semua-ringkasan-34batch-terbaru.csv
+jalankan-eksperimen.ps1.txt
+LAPORAN_*.md
+SAMPEL-4-PCAP.csv
+05_analisis/cache-tshark/
+05_analisis/*-sebagian*

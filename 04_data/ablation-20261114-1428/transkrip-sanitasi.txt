@@ -1,0 +1,940 @@
+**********************
+Windows PowerShell transcript start
+Start time: 20261114142850
+Username: Testbed-Host-VM\researcher
+RunAs User: Testbed-Host-VM\researcher
+Configuration Name: 
+Machine: Testbed-Host-VM (Microsoft Windows NT 10.0.21996.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 16768
+PSVersion: 5.1.21996.1
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.21996.1
+BuildVersion: 10.0.21996.1
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+== Eksperimen PQ-IKEv2: set 'ablation', folder C:\Users\researcher\Documents\pq-ikev2\04_data\ablation-20261114-1428 ==
+PENTING: Jangan klik di dalam area biru jendela PowerShell agar tidak masuk mode Select (Pause).
+IP aktif -> initiator: 10.97.0.149, responder: 10.97.0.206
+
+
+Rencana baru dibuat: 8 skenario, seed pengacakan = 93562.
+-- reset: netem dihapus, MTU 1500, parameter default, proposal hybrid --
+
+### [1/8] 001_MTU1500_loss5_rtt50_hybrid-plusB  (fragment_size=1280, timeout=2.0s, tries=3, delay=25ms/arah, loss=5%/arah, n=100)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 100 handshake:
+1(178ms)
+.
+.
+.
+5(172ms)
+.
+.
+.
+.
+10(173ms)
+.
+.
+.
+.
+15(169ms)
+.
+.
+.
+.
+20(203ms)
+.
+.
+.
+.
+25(172ms)
+.
+.
+.
+.
+30(171ms)
+.
+.
+.
+.
+35(2174ms)
+.
+.
+.
+.
+40(182ms)
+.
+.
+.
+.
+45(2186ms)
+.
+.
+.
+.
+50(183ms)
+.
+.
+.
+.
+55(172ms)
+.
+.
+.
+.
+60(171ms)
+.
+.
+.
+.
+65(172ms)
+.
+.
+.
+.
+70(171ms)
+.
+.
+.
+.
+75(169ms)
+.
+.
+.
+.
+80(2173ms)
+.
+.
+.
+.
+85(171ms)
+.
+.
+.
+.
+90(173ms)
+.
+.
+.
+.
+95(5791ms)
+.
+.
+.
+.
+100(2234ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (100/100), median: 173 ms, p95: 4171.1 ms [CI95: 2177.2..4282.55], retrans: 0.34, frag_IKE: 215, CPU: 0.87s/0.45s, QC: OK
+
+### [2/8] 002_MTU1280_loss0_rtt50_hybrid-plusA  (fragment_size=1252, timeout=4.0s, tries=5, delay=25ms/arah, loss=0%/arah, n=100)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 100 handshake:
+1(175ms)
+.
+.
+.
+5(174ms)
+.
+.
+.
+.
+10(173ms)
+.
+.
+.
+.
+15(172ms)
+.
+.
+.
+.
+20(171ms)
+.
+.
+.
+.
+25(173ms)
+.
+.
+.
+.
+30(175ms)
+.
+.
+.
+.
+35(173ms)
+.
+.
+.
+.
+40(182ms)
+.
+.
+.
+.
+45(170ms)
+.
+.
+.
+.
+50(169ms)
+.
+.
+.
+.
+55(169ms)
+.
+.
+.
+.
+60(171ms)
+.
+.
+.
+.
+65(169ms)
+.
+.
+.
+.
+70(172ms)
+.
+.
+.
+.
+75(174ms)
+.
+.
+.
+.
+80(172ms)
+.
+.
+.
+.
+85(185ms)
+.
+.
+.
+.
+90(170ms)
+.
+.
+.
+.
+95(171ms)
+.
+.
+.
+.
+100(171ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (100/100), median: 172 ms, p95: 179.1 ms [CI95: 177..182.15], retrans: 0, frag_IKE: 200, CPU: 0.79s/0.4s, QC: OK
+
+### [3/8] 003_MTU1280_loss5_rtt50_hybrid-plusA  (fragment_size=1252, timeout=4.0s, tries=5, delay=25ms/arah, loss=5%/arah, n=100)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 100 handshake:
+1(8177ms)
+.
+.
+.
+5(171ms)
+.
+.
+.
+.
+10(172ms)
+.
+.
+.
+.
+15(4169ms)
+.
+.
+.
+.
+20(4171ms)
+.
+.
+.
+.
+25(170ms)
+.
+.
+.
+.
+30(4171ms)
+.
+.
+.
+.
+35(4172ms)
+.
+.
+.
+.
+40(174ms)
+.
+.
+.
+.
+45(169ms)
+.
+.
+.
+.
+50(4170ms)
+.
+.
+.
+.
+55(171ms)
+.
+.
+.
+.
+60(12172ms)
+.
+.
+.
+.
+65(171ms)
+.
+.
+.
+.
+70(171ms)
+.
+.
+.
+.
+75(4171ms)
+.
+.
+.
+.
+80(175ms)
+.
+.
+.
+.
+85(4174ms)
+.
+.
+.
+.
+90(4172ms)
+.
+.
+.
+.
+95(4175ms)
+.
+.
+.
+.
+100(170ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (100/100), median: 172 ms, p95: 8171.05 ms [CI95: 4174.15..8336.8], retrans: 0.39, frag_IKE: 216, CPU: 0.78s/0.39s, QC: OK
+
+### [4/8] 004_MTU1500_loss0_rtt50_hybrid-plusA  (fragment_size=1472, timeout=4.0s, tries=5, delay=25ms/arah, loss=0%/arah, n=100)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 100 handshake:
+1(174ms)
+.
+.
+.
+5(171ms)
+.
+.
+.
+.
+10(169ms)
+.
+.
+.
+.
+15(172ms)
+.
+.
+.
+.
+20(170ms)
+.
+.
+.
+.
+25(212ms)
+.
+.
+.
+.
+30(172ms)
+.
+.
+.
+.
+35(171ms)
+.
+.
+.
+.
+40(173ms)
+.
+.
+.
+.
+45(172ms)
+.
+.
+.
+.
+50(171ms)
+.
+.
+.
+.
+55(171ms)
+.
+.
+.
+.
+60(170ms)
+.
+.
+.
+.
+65(170ms)
+.
+.
+.
+.
+70(170ms)
+.
+.
+.
+.
+75(171ms)
+.
+.
+.
+.
+80(171ms)
+.
+.
+.
+.
+85(172ms)
+.
+.
+.
+.
+90(171ms)
+.
+.
+.
+.
+95(171ms)
+.
+.
+.
+.
+100(169ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (100/100), median: 172 ms, p95: 176 ms [CI95: 173.05..183.5], retrans: 0, frag_IKE: 0, CPU: 0.78s/0.38s, QC: OK
+
+### [5/8] 005_MTU1280_loss0_rtt50_hybrid-plusB  (fragment_size=1280, timeout=2.0s, tries=3, delay=25ms/arah, loss=0%/arah, n=100)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 100 handshake:
+1(173ms)
+.
+.
+.
+5(172ms)
+.
+.
+.
+.
+10(169ms)
+.
+.
+.
+.
+15(169ms)
+.
+.
+.
+.
+20(173ms)
+.
+.
+.
+.
+25(183ms)
+.
+.
+.
+.
+30(174ms)
+.
+.
+.
+.
+35(183ms)
+.
+.
+.
+.
+40(171ms)
+.
+.
+.
+.
+45(178ms)
+.
+.
+.
+.
+50(174ms)
+.
+.
+.
+.
+55(169ms)
+.
+.
+.
+.
+60(172ms)
+.
+.
+.
+.
+65(170ms)
+.
+.
+.
+.
+70(175ms)
+.
+.
+.
+.
+75(170ms)
+.
+.
+.
+.
+80(176ms)
+.
+.
+.
+.
+85(169ms)
+.
+.
+.
+.
+90(175ms)
+.
+.
+.
+.
+95(169ms)
+.
+.
+.
+.
+100(175ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (100/100), median: 172 ms, p95: 183 ms [CI95: 179.2..189.4], retrans: 0, frag_IKE: 200, CPU: 0.82s/0.44s, QC: OK
+
+### [6/8] 006_MTU1280_loss5_rtt50_hybrid-plusB  (fragment_size=1280, timeout=2.0s, tries=3, delay=25ms/arah, loss=5%/arah, n=100)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 100 handshake:
+1(178ms)
+.
+.
+.
+5(2170ms)
+.
+.
+.
+.
+10(2174ms)
+.
+.
+.
+.
+15(2174ms)
+.
+.
+.
+.
+20(2168ms)
+.
+.
+.
+.
+25(2170ms)
+.
+.
+.
+.
+30(2169ms)
+.
+.
+.
+.
+35(169ms)
+.
+.
+.
+.
+40(169ms)
+.
+.
+.
+.
+45(169ms)
+.
+.
+.
+.
+50(169ms)
+.
+.
+.
+.
+55(169ms)
+.
+.
+.
+.
+60(169ms)
+.
+.
+.
+.
+65(168ms)
+.
+.
+.
+.
+70(2168ms)
+.
+.
+.
+.
+75(2168ms)
+.
+.
+.
+.
+80(169ms)
+.
+.
+.
+.
+85(169ms)
+.
+.
+.
+.
+90(168ms)
+.
+.
+.
+.
+95(169ms)
+.
+.
+.
+.
+100(168ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (100/100), median: 169.5 ms, p95: 4171.2 ms [CI95: 2170..5871.9], retrans: 0.4, frag_IKE: 223, CPU: 0.71s/0.35s, QC: OK
+
+### [7/8] 007_MTU1500_loss5_rtt50_hybrid-plusA  (fragment_size=1472, timeout=4.0s, tries=5, delay=25ms/arah, loss=5%/arah, n=100)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 100 handshake:
+1(4170ms)
+.
+.
+.
+5(169ms)
+.
+.
+.
+.
+10(170ms)
+.
+.
+.
+.
+15(168ms)
+.
+.
+.
+.
+20(169ms)
+.
+.
+.
+.
+25(170ms)
+.
+.
+.
+.
+30(169ms)
+.
+.
+.
+.
+35(168ms)
+.
+.
+.
+.
+40(168ms)
+.
+.
+.
+.
+45(168ms)
+.
+.
+.
+.
+50(167ms)
+.
+.
+.
+.
+55(4168ms)
+.
+.
+.
+.
+60(8168ms)
+.
+.
+.
+.
+65(15369ms)
+.
+.
+.
+.
+70(169ms)
+.
+.
+.
+.
+75(169ms)
+.
+.
+.
+.
+80(4170ms)
+.
+.
+.
+.
+85(170ms)
+.
+.
+.
+.
+90(168ms)
+.
+.
+.
+.
+95(168ms)
+.
+.
+.
+.
+100(167ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (100/100), median: 169 ms, p95: 4370.85 ms [CI95: 4170..11569], retrans: 0.34, frag_IKE: 0, CPU: 0.66s/0.32s, QC: OK
+
+### [8/8] 008_MTU1500_loss0_rtt50_hybrid-plusB  (fragment_size=1280, timeout=2.0s, tries=3, delay=25ms/arah, loss=0%/arah, n=100)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 100 handshake:
+1(170ms)
+.
+.
+.
+5(168ms)
+.
+.
+.
+.
+10(167ms)
+.
+.
+.
+.
+15(167ms)
+.
+.
+.
+.
+20(168ms)
+.
+.
+.
+.
+25(168ms)
+.
+.
+.
+.
+30(170ms)
+.
+.
+.
+.
+35(169ms)
+.
+.
+.
+.
+40(169ms)
+.
+.
+.
+.
+45(170ms)
+.
+.
+.
+.
+50(170ms)
+.
+.
+.
+.
+55(168ms)
+.
+.
+.
+.
+60(167ms)
+.
+.
+.
+.
+65(169ms)
+.
+.
+.
+.
+70(170ms)
+.
+.
+.
+.
+75(168ms)
+.
+.
+.
+.
+80(169ms)
+.
+.
+.
+.
+85(169ms)
+.
+.
+.
+.
+90(169ms)
+.
+.
+.
+.
+95(169ms)
+.
+.
+.
+.
+100(168ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (100/100), median: 169 ms, p95: 170 ms [CI95: 170..174.25], retrans: 0, frag_IKE: 200, CPU: 0.63s/0.33s, QC: OK
+-- reset: netem dihapus, MTU 1500, parameter default, proposal hybrid --
+
+================ RINGKASAN BATCH (ablation) ================
+
+idx kondisi             konfigurasi  valid   success_rate_persen median_ms p95_ms  p95_ci_bawah p95_ci_atas rata_retransmisi
+--- -------             -----------  -----   ------------------- --------- ------  ------------ ----------- ----------------
+1   MTU1500_loss5_rtt50 hybrid-plusB 100/100 100                 173       4171.1  2177.2       4282.55     0.34
+2   MTU1280_loss0_rtt50 hybrid-plusA 100/100 100                 172       179.1   177          182.15      0
+3   MTU1280_loss5_rtt50 hybrid-plusA 100/100 100                 172       8171.05 4174.15      8336.8      0.39
+4   MTU1500_loss0_rtt50 hybrid-plusA 100/100 100                 172       176     173.05       183.5       0
+5   MTU1280_loss0_rtt50 hybrid-plusB 100/100 100                 172       183     179.2        189.4       0
+6   MTU1280_loss5_rtt50 hybrid-plusB 100/100 100                 169.5     4171.2  2170         5871.9      0.4
+7   MTU1500_loss5_rtt50 hybrid-plusA 100/100 100                 169       4370.85 4170         11569       0.34
+8   MTU1500_loss0_rtt50 hybrid-plusB 100/100 100                 169       170     170          174.25      0
+
+
+Rata-rata per run: ringan 1.27 s, terberat 2.83 s, tertimbang 2.01 s; overhead per skenario 22.0 s
+ESTIMASI total 81 skenario x 100 run: sekitar 3.36 sampai 5.02 jam (maks 6.86 jam)
+
+Batch dikerjakan pada sesi ini : 8
+Batch dengan catatan QC        : 0
+Durasi sesi                    : 30.5 menit
+SELESAI. Data: C:\Users\researcher\Documents\pq-ikev2\04_data\ablation-20261114-1428
+**********************
+Windows PowerShell transcript end
+End time: 20261114145928
+**********************

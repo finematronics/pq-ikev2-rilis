@@ -1,0 +1,39 @@
+﻿=== BUKTI FRAGMENTASI IKEv2 HYBRID (001_MTU1280_loss0_rtt100_hybrid-optimized) ===
+Konfigurasi: hybrid-optimized (fragment_size=1252, MTU=1280, loss=0%, RTT=100ms)
+QC Initiator: QC,ok,900,100,101,0,3739,200,0,394600
+
+    1   0.000000  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 290 IKE_SA_INIT MID=00 Initiator Request
+    2   0.051424  10.97.0.206 ΓåÆ 10.97.0.149  ISAKMP 298 IKE_SA_INIT MID=00 Responder Response
+    3   0.103292  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 1266 Unknown 43 MID=01 Initiator Request (fragment 1/2)
+    4   0.103301  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 140 Unknown 43 MID=01 Initiator Request (fragment 2/2)
+    5   0.155773  10.97.0.206 ΓåÆ 10.97.0.149  ISAKMP 1199 Unknown 43 MID=01 Responder Response
+    6   0.207454  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 461 IKE_AUTH MID=02 Initiator Request
+    7   0.259625  10.97.0.206 ΓåÆ 10.97.0.149  ISAKMP 292 IKE_AUTH MID=02 Responder Response
+    8   0.346466  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 111 INFORMATIONAL MID=03 Initiator Request
+    9   0.398144  10.97.0.206 ΓåÆ 10.97.0.149  ISAKMP 103 INFORMATIONAL MID=03 Responder Response
+   10   1.471548  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 290 IKE_SA_INIT MID=00 Initiator Request
+   11   1.522948  10.97.0.206 ΓåÆ 10.97.0.149  ISAKMP 298 IKE_SA_INIT MID=00 Responder Response
+   12   1.574872  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 1266 Unknown 43 MID=01 Initiator Request (fragment 1/2)
+   13   1.574903  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 140 Unknown 43 MID=01 Initiator Request (fragment 2/2)
+   14   1.626741  10.97.0.206 ΓåÆ 10.97.0.149  ISAKMP 1199 Unknown 43 MID=01 Responder Response
+   15   1.678067  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 461 IKE_AUTH MID=02 Initiator Request
+   16   1.730494  10.97.0.206 ΓåÆ 10.97.0.149  ISAKMP 292 IKE_AUTH MID=02 Responder Response
+   17   1.815476  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 111 INFORMATIONAL MID=03 Initiator Request
+   18   1.866547  10.97.0.206 ΓåÆ 10.97.0.149  ISAKMP 103 INFORMATIONAL MID=03 Responder Response
+   19   2.939714  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 290 IKE_SA_INIT MID=00 Initiator Request
+   20   2.991520  10.97.0.206 ΓåÆ 10.97.0.149  ISAKMP 298 IKE_SA_INIT MID=00 Responder Response
+   21   3.043699  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 1266 Unknown 43 MID=01 Initiator Request (fragment 1/2)
+   22   3.043707  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 140 Unknown 43 MID=01 Initiator Request (fragment 2/2)
+   23   3.096582  10.97.0.206 ΓåÆ 10.97.0.149  ISAKMP 1199 Unknown 43 MID=01 Responder Response
+   24   3.148511  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 461 IKE_AUTH MID=02 Initiator Request
+   25   3.200672  10.97.0.206 ΓåÆ 10.97.0.149  ISAKMP 292 IKE_AUTH MID=02 Responder Response
+   26   3.284315  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 111 INFORMATIONAL MID=03 Initiator Request
+   27   3.335715  10.97.0.206 ΓåÆ 10.97.0.149  ISAKMP 103 INFORMATIONAL MID=03 Responder Response
+   28   4.415903  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 290 IKE_SA_INIT MID=00 Initiator Request
+   29   4.467496  10.97.0.206 ΓåÆ 10.97.0.149  ISAKMP 298 IKE_SA_INIT MID=00 Responder Response
+   30   4.518460  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 1266 Unknown 43 MID=01 Initiator Request (fragment 1/2)
+   31   4.518467  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 140 Unknown 43 MID=01 Initiator Request (fragment 2/2)
+   32   4.570283  10.97.0.206 ΓåÆ 10.97.0.149  ISAKMP 1199 Unknown 43 MID=01 Responder Response
+   33   4.621256  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 461 IKE_AUTH MID=02 Initiator Request
+   34   4.678395  10.97.0.206 ΓåÆ 10.97.0.149  ISAKMP 292 IKE_AUTH MID=02 Responder Response
+   35   4.799427  10.97.0.149 ΓåÆ 10.97.0.206  ISAKMP 111 INFORMATIONAL MID=03 Initiator Request

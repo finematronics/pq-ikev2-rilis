@@ -1,0 +1,79 @@
+**********************
+Windows PowerShell transcript start
+Start time: 20261114094615
+Username: <HOST_PENELITI>\<USER>
+RunAs User: <HOST_PENELITI>\<USER>
+Configuration Name: 
+Machine: <HOST_PENELITI> (Microsoft Windows NT 10.0.21996.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File C:\Users\<USER>\Downloads\pilot-fragmentasi.ps1
+Process ID: 14648
+PSVersion: 5.1.21996.1
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.21996.1
+BuildVersion: 10.0.21996.1
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+IP initiator: 10.97.0.149, responder: 10.97.0.206
+
+== Pilot 1: hybrid DEFAULT, MTU 1280, delay 50 ms/arah, loss 5%/arah ==
+
+Saturday, November 14, 2026 9:46:17 AM
+
+== Konfigurasi aktif (proposal dan parameter charon) ==
+grep: /etc/swanctl/swanctl.conf: Permission denied
+/etc/strongswan.d/charon.conf:86:    # fragment_size = 1280
+/etc/strongswan.d/charon.conf:90:    # fragment_size_v4 = charon.fragment_size
+/etc/strongswan.d/charon.conf:94:    # fragment_size_v6 = charon.fragment_size
+/etc/strongswan.d/charon.conf:248:    # retransmit_base = 1.8
+/etc/strongswan.d/charon.conf:252:    # retransmit_jitter = 0
+/etc/strongswan.d/charon.conf:256:    # retransmit_limit = 0
+/etc/strongswan.d/charon.conf:258:    # Timeout in seconds before sending first retransmit.
+/etc/strongswan.d/charon.conf:259:    # retransmit_timeout = 4.0
+/etc/strongswan.d/charon.conf:261:    # Number of times to retransmit a packet before giving up.
+/etc/strongswan.d/charon.conf:262:    # retransmit_tries = 5
+-- membersihkan: netem dihapus, MTU 1500, SA ditutup --
+
+
+
+
+
+
+== Kondisi terpasang ==
+mtu 1280
+qdisc netem 8005: root refcnt 65 limit 1000 delay 50ms loss 5%
+
+== Handshake dan rekaman ==
+[CFG] selected proposal: IKE:AES_GCM_16_256/PRF_HMAC_SHA2_512/CURVE_25519/KE1_ML_KEM_768
+[IKE] IKE_SA net-net[2] established between 10.97.0.149[initiator]...10.97.0.206[responder]
+[CFG] selected proposal: ESP:AES_GCM_16_128/NO_EXT_SEQ
+[IKE] CHILD_SA net-net{2} established with SPIs c1257c54_i cc4c1419_o and TS 10.97.0.149/32 === 10.97.0.206/32
+initiate completed successfully
+handshake_ms=503
+
+== paket IKE di pcap ==
+    1   0.000000  10.97.0.149 → 10.97.0.206  ISAKMP 290 IKE_SA_INIT MID=00 Initiator Request
+    2   0.067720  10.97.0.206 → 10.97.0.149  ISAKMP 298 IKE_SA_INIT MID=00 Responder Response
+    3   0.129178  10.97.0.149 → 10.97.0.206  ISAKMP 1294 Unknown 43 MID=01 Initiator Request (fragment 1/2)
+    4   0.129197  10.97.0.149 → 10.97.0.206  ISAKMP 112 Unknown 43 MID=01 Initiator Request (fragment 2/2)
+    5   0.187824  10.97.0.206 → 10.97.0.149  ISAKMP 1199 Unknown 43 MID=01 Responder Response
+    6   0.242461  10.97.0.149 → 10.97.0.206  ISAKMP 461 IKE_AUTH MID=02 Initiator Request
+    7   0.302855  10.97.0.206 → 10.97.0.149  ISAKMP 292 IKE_AUTH MID=02 Responder Response
+    8   0.794773  10.97.0.149 → 10.97.0.206  ISAKMP 111 INFORMATIONAL MID=03 Initiator Request
+    9   0.817290  10.97.0.206 → 10.97.0.149  ISAKMP 111 INFORMATIONAL MID=00 Responder Request
+   10   0.845650  10.97.0.206 → 10.97.0.149  ISAKMP 103 INFORMATIONAL MID=03 Responder Response
+
+jumlah_paket_IP_terfragmentasi=0
+
+-- membersihkan: netem dihapus, MTU 1500, SA ditutup --
+
+
+
+
+SELESAI. Hasil: C:\Users\<USER>\Documents\pq-ikev2\03_pilot\pilot1-fragmentasi.txt dan C:\Users\<USER>\Documents\pq-ikev2\03_pilot\pilot-default.pcap
+**********************
+Windows PowerShell transcript end
+End time: 20261114094632
+**********************

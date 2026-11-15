@@ -1,0 +1,1386 @@
+**********************
+Windows PowerShell transcript start
+Start time: 20261114125816
+Username: Testbed-Host-VM\researcher
+RunAs User: Testbed-Host-VM\researcher
+Configuration Name: 
+Machine: Testbed-Host-VM (Microsoft Windows NT 10.0.21996.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 16768
+PSVersion: 5.1.21996.1
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.21996.1
+BuildVersion: 10.0.21996.1
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+== Eksperimen PQ-IKEv2: set 'tuning', folder C:\Users\researcher\Documents\pq-ikev2\03_pilot\tuning-20261114-1258 ==
+PENTING: Jangan klik di dalam area biru jendela PowerShell agar tidak masuk mode Select (Pause).
+IP aktif -> initiator: 10.97.0.149, responder: 10.97.0.206
+
+
+Rencana baru dibuat: 20 skenario, seed pengacakan = 608158.
+-- reset: netem dihapus, MTU 1500, parameter default, proposal hybrid --
+
+### [1/20] 001_MTU1280_loss1_rtt50_cand-t3.0-r4  (fragment_size=1252, timeout=3.0s, tries=4, delay=25ms/arah, loss=1%/arah, n=40)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 40 handshake:
+1(176ms)
+.
+.
+.
+5(174ms)
+.
+.
+.
+.
+10(174ms)
+.
+.
+.
+.
+15(172ms)
+.
+.
+.
+.
+20(181ms)
+.
+.
+.
+.
+25(170ms)
+.
+.
+.
+.
+30(172ms)
+.
+.
+.
+.
+35(170ms)
+.
+.
+.
+.
+40(171ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (40/40), median: 172 ms, p95: 176.25 ms [CI95: 174..183], retrans: 0, frag_IKE: 80, CPU: 0.31s/0.16s, QC: OK
+
+### [2/20] 002_MTU1500_loss5_rtt50_cand-t2.0-r3  (fragment_size=1472, timeout=2.0s, tries=3, delay=25ms/arah, loss=5%/arah, n=40)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 40 handshake:
+1(191ms)
+.
+.
+.
+5(171ms)
+.
+.
+.
+.
+10(178ms)
+.
+.
+.
+.
+15(187ms)
+.
+.
+.
+.
+20(179ms)
+.
+.
+.
+.
+25(170ms)
+.
+.
+.
+.
+30(171ms)
+.
+.
+.
+.
+35(2170ms)
+.
+.
+.
+.
+40(170ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (40/40), median: 175 ms, p95: 2176 ms [CI95: 2171..2182], retrans: 0.22, frag_IKE: 0, CPU: 0.37s/0.19s, QC: OK
+
+### [3/20] 003_MTU1280_loss1_rtt50_cand-t3.0-r3  (fragment_size=1252, timeout=3.0s, tries=3, delay=25ms/arah, loss=1%/arah, n=40)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 40 handshake:
+1(174ms)
+.
+.
+.
+5(170ms)
+.
+.
+.
+.
+10(172ms)
+.
+.
+.
+.
+15(171ms)
+.
+.
+.
+.
+20(171ms)
+.
+.
+.
+.
+25(172ms)
+.
+.
+.
+.
+30(172ms)
+.
+.
+.
+.
+35(171ms)
+.
+.
+.
+.
+40(171ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (40/40), median: 172 ms, p95: 3169.15 ms [CI95: 175.6..3176], retrans: 0.08, frag_IKE: 83, CPU: 0.32s/0.16s, QC: OK
+
+### [4/20] 004_MTU1280_loss5_rtt100_cand-t3.0-r3  (fragment_size=1252, timeout=3.0s, tries=3, delay=50ms/arah, loss=5%/arah, n=100)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 100 handshake:
+1(3332ms)
+.
+.
+.
+5(8726ms)
+.
+.
+.
+.
+10(325ms)
+.
+.
+.
+.
+15(320ms)
+.
+.
+.
+.
+20(321ms)
+.
+.
+.
+.
+25(321ms)
+.
+.
+.
+.
+30(321ms)
+.
+.
+.
+.
+35(321ms)
+.
+.
+.
+.
+40(319ms)
+.
+.
+.
+.
+45(319ms)
+.
+.
+.
+.
+50(6323ms)
+.
+.
+.
+.
+55(322ms)
+.
+.
+.
+.
+60(320ms)
+.
+.
+.
+.
+65(322ms)
+.
+.
+.
+.
+70(3321ms)
+.
+.
+.
+.
+75(322ms)
+.
+.
+.
+.
+80(3322ms)
+.
+.
+.
+.
+85(320ms)
+.
+.
+.
+.
+90(6325ms)
+.
+.
+.
+.
+95(328ms)
+.
+.
+.
+.
+100(3322ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (100/100), median: 322 ms, p95: 6321.1 ms [CI95: 3323..6444.8], retrans: 0.34, frag_IKE: 217, CPU: 0.8s/0.42s, QC: OK
+
+### [5/20] 005_MTU1400_loss5_rtt100_cand-t2.0-r3  (fragment_size=1372, timeout=2.0s, tries=3, delay=50ms/arah, loss=5%/arah, n=40)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 40 handshake:
+1(2326ms)
+.
+.
+.
+5(321ms)
+.
+.
+.
+.
+10(321ms)
+.
+.
+.
+.
+15(324ms)
+.
+.
+.
+.
+20(320ms)
+.
+.
+.
+.
+25(2331ms)
+.
+.
+.
+.
+30(2332ms)
+.
+.
+.
+.
+35(319ms)
+.
+.
+.
+.
+40(347ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (40/40), median: 321 ms, p95: 2511.95 ms [CI95: 2323.15..7923], retrans: 0.28, frag_IKE: 0, CPU: 0.35s/0.16s, QC: OK
+
+### [6/20] 006_MTU1280_loss1_rtt50_hybrid-default  (fragment_size=1280, timeout=4.0s, tries=5, delay=25ms/arah, loss=1%/arah, n=40)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 40 handshake:
+1(173ms)
+.
+.
+.
+5(171ms)
+.
+.
+.
+.
+10(172ms)
+.
+.
+.
+.
+15(169ms)
+.
+.
+.
+.
+20(170ms)
+.
+.
+.
+.
+25(170ms)
+.
+.
+.
+.
+30(174ms)
+.
+.
+.
+.
+35(172ms)
+.
+.
+.
+.
+40(171ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (40/40), median: 172 ms, p95: 398.6 ms [CI95: 179.55..4173], retrans: 0.05, frag_IKE: 80, CPU: 0.34s/0.17s, QC: OK
+
+### [7/20] 007_MTU1280_loss5_rtt100_cand-t2.0-r3  (fragment_size=1252, timeout=2.0s, tries=3, delay=50ms/arah, loss=5%/arah, n=100)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 100 handshake:
+1(2332ms)
+.
+.
+.
+5(330ms)
+.
+.
+.
+.
+10(2322ms)
+.
+.
+.
+.
+15(5927ms)
+.
+.
+.
+.
+20(2322ms)
+.
+.
+.
+.
+25(323ms)
+.
+.
+.
+.
+30(321ms)
+.
+.
+.
+.
+35(322ms)
+.
+.
+.
+.
+40(321ms)
+.
+.
+.
+.
+45(321ms)
+.
+.
+.
+.
+50(321ms)
+.
+.
+.
+.
+55(323ms)
+.
+.
+.
+.
+60(2321ms)
+.
+.
+.
+.
+65(321ms)
+.
+.
+.
+.
+70(2322ms)
+.
+.
+.
+.
+75(2322ms)
+.
+.
+.
+.
+80(320ms)
+.
+.
+.
+.
+85(323ms)
+.
+.
+.
+.
+90(2323ms)
+.
+.
+.
+.
+95(2322ms)
+.
+.
+.
+.
+100(2320ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (100/100), median: 324 ms, p95: 2327 ms [CI95: 2324.05..2433.45], retrans: 0.39, frag_IKE: 227, CPU: 0.82s/0.43s, QC: OK
+
+### [8/20] 008_MTU1280_loss1_rtt50_cand-t2.0-r3  (fragment_size=1252, timeout=2.0s, tries=3, delay=25ms/arah, loss=1%/arah, n=40)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 40 handshake:
+1(2174ms)
+.
+.
+.
+5(2174ms)
+.
+.
+.
+.
+10(180ms)
+.
+.
+.
+.
+15(175ms)
+.
+.
+.
+.
+20(175ms)
+.
+.
+.
+.
+25(169ms)
+.
+.
+.
+.
+30(174ms)
+.
+.
+.
+.
+35(181ms)
+.
+.
+.
+.
+40(177ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (40/40), median: 176.5 ms, p95: 2174.05 ms [CI95: 189..2182], retrans: 0.1, frag_IKE: 83, CPU: 0.43s/0.2s, QC: OK
+
+### [9/20] 009_MTU1280_loss5_rtt100_cand-t3.0-r4  (fragment_size=1252, timeout=3.0s, tries=4, delay=50ms/arah, loss=5%/arah, n=100)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 100 handshake:
+1(3324ms)
+.
+.
+.
+5(319ms)
+.
+.
+.
+.
+10(321ms)
+.
+.
+.
+.
+15(322ms)
+.
+.
+.
+.
+20(3329ms)
+.
+.
+.
+.
+25(3321ms)
+.
+.
+.
+.
+30(322ms)
+.
+.
+.
+.
+35(322ms)
+.
+.
+.
+.
+40(323ms)
+.
+.
+.
+.
+45(321ms)
+.
+.
+.
+.
+50(322ms)
+.
+.
+.
+.
+55(354ms)
+.
+.
+.
+.
+60(325ms)
+.
+.
+.
+.
+65(324ms)
+.
+.
+.
+.
+70(3321ms)
+.
+.
+.
+.
+75(323ms)
+.
+.
+.
+.
+80(323ms)
+.
+.
+.
+.
+85(319ms)
+.
+.
+.
+.
+90(320ms)
+.
+.
+.
+.
+95(6321ms)
+.
+.
+.
+.
+100(325ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (100/100), median: 323 ms, p95: 3330.75 ms [CI95: 3322..6321.15], retrans: 0.25, frag_IKE: 216, CPU: 0.87s/0.45s, QC: OK
+
+### [10/20] 010_MTU1500_loss5_rtt50_hybrid-default  (fragment_size=1280, timeout=4.0s, tries=5, delay=25ms/arah, loss=5%/arah, n=40)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 40 handshake:
+1(4174ms)
+.
+.
+.
+5(199ms)
+.
+.
+.
+.
+10(170ms)
+.
+.
+.
+.
+15(178ms)
+.
+.
+.
+.
+20(4171ms)
+.
+.
+.
+.
+25(181ms)
+.
+.
+.
+.
+30(175ms)
+.
+.
+.
+.
+35(179ms)
+.
+.
+.
+.
+40(176ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (40/40), median: 179 ms, p95: 4187.05 ms [CI95: 4174.1..15371], retrans: 0.35, frag_IKE: 92, CPU: 0.42s/0.21s, QC: OK
+
+### [11/20] 011_MTU1280_loss5_rtt100_hybrid-default  (fragment_size=1280, timeout=4.0s, tries=5, delay=50ms/arah, loss=5%/arah, n=100)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 100 handshake:
+1(11525ms)
+.
+.
+.
+5(323ms)
+.
+.
+.
+.
+10(4324ms)
+.
+.
+.
+.
+15(4320ms)
+.
+.
+.
+.
+20(319ms)
+.
+.
+.
+.
+25(323ms)
+.
+.
+.
+.
+30(329ms)
+.
+.
+.
+.
+35(4322ms)
+.
+.
+.
+.
+40(4321ms)
+.
+.
+.
+.
+45(329ms)
+.
+.
+.
+.
+50(324ms)
+.
+.
+.
+.
+55(4322ms)
+.
+.
+.
+.
+60(320ms)
+.
+.
+.
+.
+65(4321ms)
+.
+.
+.
+.
+70(320ms)
+.
+.
+.
+.
+75(321ms)
+.
+.
+.
+.
+80(4321ms)
+.
+.
+.
+.
+85(320ms)
+.
+.
+.
+.
+90(321ms)
+.
+.
+.
+.
+95(321ms)
+.
+.
+.
+.
+100(321ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (100/100), median: 323 ms, p95: 4328 ms [CI95: 4323..8483.95], retrans: 0.38, frag_IKE: 211, CPU: 0.82s/0.42s, QC: OK
+
+### [12/20] 012_MTU1400_loss5_rtt100_cand-t3.0-r3  (fragment_size=1372, timeout=3.0s, tries=3, delay=50ms/arah, loss=5%/arah, n=40)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 40 handshake:
+1(3326ms)
+.
+.
+.
+5(321ms)
+.
+.
+.
+.
+10(3326ms)
+.
+.
+.
+.
+15(321ms)
+.
+.
+.
+.
+20(3328ms)
+.
+.
+.
+.
+25(3332ms)
+.
+.
+.
+.
+30(320ms)
+.
+.
+.
+.
+35(330ms)
+.
+.
+.
+.
+40(323ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (40/40), median: 321 ms, p95: 3329.15 ms [CI95: 3322.3..6319], retrans: 0.28, frag_IKE: 0, CPU: 0.33s/0.17s, QC: OK
+
+### [13/20] 013_MTU1400_loss5_rtt100_hybrid-default  (fragment_size=1280, timeout=4.0s, tries=5, delay=50ms/arah, loss=5%/arah, n=40)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 40 handshake:
+1(323ms)
+.
+.
+.
+5(324ms)
+.
+.
+.
+.
+10(329ms)
+.
+.
+.
+.
+15(324ms)
+.
+.
+.
+.
+20(328ms)
+.
+.
+.
+.
+25(320ms)
+.
+.
+.
+.
+30(324ms)
+.
+.
+.
+.
+35(4329ms)
+.
+.
+.
+.
+40(4321ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (40/40), median: 325 ms, p95: 8483.05 ms [CI95: 4332..15521], retrans: 0.4, frag_IKE: 84, CPU: 0.37s/0.19s, QC: OK
+
+### [14/20] 014_MTU1500_loss5_rtt50_cand-t2.0-r4  (fragment_size=1472, timeout=2.0s, tries=4, delay=25ms/arah, loss=5%/arah, n=40)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 40 handshake:
+1(173ms)
+.
+.
+.
+5(2172ms)
+.
+.
+.
+.
+10(169ms)
+.
+.
+.
+.
+15(2172ms)
+.
+.
+.
+.
+20(4173ms)
+.
+.
+.
+.
+25(170ms)
+.
+.
+.
+.
+30(2171ms)
+.
+.
+.
+.
+35(2170ms)
+.
+.
+.
+.
+40(171ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (40/40), median: 171 ms, p95: 2283.45 ms [CI95: 2172..5777], retrans: 0.3, frag_IKE: 0, CPU: 0.33s/0.16s, QC: OK
+
+### [15/20] 015_MTU1500_loss5_rtt50_cand-t3.0-r4  (fragment_size=1472, timeout=3.0s, tries=4, delay=25ms/arah, loss=5%/arah, n=40)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 40 handshake:
+1(3175ms)
+.
+.
+.
+5(171ms)
+.
+.
+.
+.
+10(3172ms)
+.
+.
+.
+.
+15(171ms)
+.
+.
+.
+.
+20(172ms)
+.
+.
+.
+.
+25(3171ms)
+.
+.
+.
+.
+30(3171ms)
+.
+.
+.
+.
+35(170ms)
+.
+.
+.
+.
+40(171ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (40/40), median: 172 ms, p95: 3173.1 ms [CI95: 3172..6171], retrans: 0.38, frag_IKE: 0, CPU: 0.29s/0.15s, QC: OK
+
+### [16/20] 016_MTU1280_loss5_rtt100_cand-t2.0-r4  (fragment_size=1252, timeout=2.0s, tries=4, delay=50ms/arah, loss=5%/arah, n=100)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 100 handshake:
+1(2325ms)
+.
+.
+.
+5(322ms)
+.
+.
+.
+.
+10(2321ms)
+.
+.
+.
+.
+15(329ms)
+.
+.
+.
+.
+20(322ms)
+.
+.
+.
+.
+25(323ms)
+.
+.
+.
+.
+30(318ms)
+.
+.
+.
+.
+35(320ms)
+.
+.
+.
+.
+40(320ms)
+.
+.
+.
+.
+45(321ms)
+.
+.
+.
+.
+50(320ms)
+.
+.
+.
+.
+55(2322ms)
+.
+.
+.
+.
+60(4322ms)
+.
+.
+.
+.
+65(324ms)
+.
+.
+.
+.
+70(321ms)
+.
+.
+.
+.
+75(321ms)
+.
+.
+.
+.
+80(2320ms)
+.
+.
+.
+.
+85(321ms)
+.
+.
+.
+.
+90(322ms)
+.
+.
+.
+.
+95(321ms)
+.
+.
+.
+.
+100(322ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (100/100), median: 322 ms, p95: 4322.1 ms [CI95: 2323..5922], retrans: 0.35, frag_IKE: 218, CPU: 0.77s/0.4s, QC: OK
+
+### [17/20] 017_MTU1400_loss5_rtt100_cand-t2.0-r4  (fragment_size=1372, timeout=2.0s, tries=4, delay=50ms/arah, loss=5%/arah, n=40)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 40 handshake:
+1(323ms)
+.
+.
+.
+5(2322ms)
+.
+.
+.
+.
+10(2321ms)
+.
+.
+.
+.
+15(2323ms)
+.
+.
+.
+.
+20(321ms)
+.
+.
+.
+.
+25(322ms)
+.
+.
+.
+.
+30(321ms)
+.
+.
+.
+.
+35(322ms)
+.
+.
+.
+.
+40(2322ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (40/40), median: 322 ms, p95: 2323 ms [CI95: 2322..4323], retrans: 0.3, frag_IKE: 0, CPU: 0.29s/0.15s, QC: OK
+
+### [18/20] 018_MTU1280_loss1_rtt50_cand-t2.0-r4  (fragment_size=1252, timeout=2.0s, tries=4, delay=25ms/arah, loss=1%/arah, n=40)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 40 handshake:
+1(174ms)
+.
+.
+.
+5(172ms)
+.
+.
+.
+.
+10(170ms)
+.
+.
+.
+.
+15(172ms)
+.
+.
+.
+.
+20(170ms)
+.
+.
+.
+.
+25(171ms)
+.
+.
+.
+.
+30(170ms)
+.
+.
+.
+.
+35(174ms)
+.
+.
+.
+.
+40(172ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (40/40), median: 171 ms, p95: 2172.05 ms [CI95: 174..2175], retrans: 0.08, frag_IKE: 82, CPU: 0.31s/0.16s, QC: OK
+
+### [19/20] 019_MTU1400_loss5_rtt100_cand-t3.0-r4  (fragment_size=1372, timeout=3.0s, tries=4, delay=50ms/arah, loss=5%/arah, n=40)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 40 handshake:
+1(332ms)
+.
+.
+.
+5(322ms)
+.
+.
+.
+.
+10(3333ms)
+.
+.
+.
+.
+15(331ms)
+.
+.
+.
+.
+20(326ms)
+.
+.
+.
+.
+25(340ms)
+.
+.
+.
+.
+30(341ms)
+.
+.
+.
+.
+35(330ms)
+.
+.
+.
+.
+40(335ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (40/40), median: 337 ms, p95: 3491.05 ms [CI95: 3333..11743], retrans: 0.32, frag_IKE: 0, CPU: 0.51s/0.26s, QC: OK
+
+### [20/20] 020_MTU1500_loss5_rtt50_cand-t3.0-r3  (fragment_size=1472, timeout=3.0s, tries=3, delay=25ms/arah, loss=5%/arah, n=40)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 40 handshake:
+1(176ms)
+.
+.
+.
+5(198ms)
+.
+.
+.
+.
+10(198ms)
+.
+.
+.
+.
+15(176ms)
+.
+.
+.
+.
+20(178ms)
+.
+.
+.
+.
+25(173ms)
+.
+.
+.
+.
+30(3194ms)
+.
+.
+.
+.
+35(178ms)
+.
+.
+.
+.
+40(3200ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (40/40), median: 187.5 ms, p95: 3200 ms [CI95: 3190.2..3202], retrans: 0.38, frag_IKE: 0, CPU: 0.5s/0.26s, QC: OK
+-- reset: netem dihapus, MTU 1500, parameter default, proposal hybrid --
+
+================ RINGKASAN BATCH (tuning) ================
+
+idx kondisi              konfigurasi    valid   success_rate_persen median_ms p95_ms  p95_ci_bawah p95_ci_atas rata_retransmisi
+--- -------              -----------    -----   ------------------- --------- ------  ------------ ----------- ----------------
+1   MTU1280_loss1_rtt50  cand-t3.0-r4   40/40   100                 172       176.25  174          183         0
+2   MTU1500_loss5_rtt50  cand-t2.0-r3   40/40   100                 175       2176    2171         2182        0.22
+3   MTU1280_loss1_rtt50  cand-t3.0-r3   40/40   100                 172       3169.15 175.6        3176        0.08
+4   MTU1280_loss5_rtt100 cand-t3.0-r3   100/100 100                 322       6321.1  3323         6444.8      0.34
+5   MTU1400_loss5_rtt100 cand-t2.0-r3   40/40   100                 321       2511.95 2323.15      7923        0.28
+6   MTU1280_loss1_rtt50  hybrid-default 40/40   100                 172       398.6   179.55       4173        0.05
+7   MTU1280_loss5_rtt100 cand-t2.0-r3   100/100 100                 324       2327    2324.05      2433.45     0.39
+8   MTU1280_loss1_rtt50  cand-t2.0-r3   40/40   100                 176.5     2174.05 189          2182        0.1
+9   MTU1280_loss5_rtt100 cand-t3.0-r4   100/100 100                 323       3330.75 3322         6321.15     0.25
+10  MTU1500_loss5_rtt50  hybrid-default 40/40   100                 179       4187.05 4174.1       15371       0.35
+11  MTU1280_loss5_rtt100 hybrid-default 100/100 100                 323       4328    4323         8483.95     0.38
+12  MTU1400_loss5_rtt100 cand-t3.0-r3   40/40   100                 321       3329.15 3322.3       6319        0.28
+13  MTU1400_loss5_rtt100 hybrid-default 40/40   100                 325       8483.05 4332         15521       0.4
+14  MTU1500_loss5_rtt50  cand-t2.0-r4   40/40   100                 171       2283.45 2172         5777        0.3
+15  MTU1500_loss5_rtt50  cand-t3.0-r4   40/40   100                 172       3173.1  3172         6171        0.38
+16  MTU1280_loss5_rtt100 cand-t2.0-r4   100/100 100                 322       4322.1  2323         5922        0.35
+17  MTU1400_loss5_rtt100 cand-t2.0-r4   40/40   100                 322       2323    2322         4323        0.3
+18  MTU1280_loss1_rtt50  cand-t2.0-r4   40/40   100                 171       2172.05 174          2175        0.08
+19  MTU1400_loss5_rtt100 cand-t3.0-r4   40/40   100                 337       3491.05 3333         11743       0.32
+20  MTU1500_loss5_rtt50  cand-t3.0-r3   40/40   100                 187.5     3200    3190.2       3202        0.38
+
+
+Rata-rata per run: ringan 1.85 s, terberat 2.79 s, tertimbang 2.30 s; overhead per skenario 23.2 s
+ESTIMASI total 81 skenario x 100 run: sekitar 4.69 sampai 5.70 jam (maks 6.81 jam)
+>> Kandidat terbaik hasil tuning: cand-t2.0-r3 (SR=100%, p95=2327 ms [CI: 2324.05..2433.45])
+>> Dokumen CONFIG_FREEZE.md berhasil diperbarui di: C:\Users\researcher\Documents\pq-ikev2\03_pilot\CONFIG_FREEZE.md
+
+Batch dikerjakan pada sesi ini : 20
+Batch dengan catatan QC        : 0
+Durasi sesi                    : 55.5 menit
+SELESAI. Data: C:\Users\researcher\Documents\pq-ikev2\03_pilot\tuning-20261114-1258
+**********************
+Windows PowerShell transcript end
+End time: 20261114135355
+**********************

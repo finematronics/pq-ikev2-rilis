@@ -1,0 +1,14 @@
+VALIDASI STRUKTURAL PCAP vs runs.csv - 89 batch, 8900 run
+Kelas residu: ANOMALI=4, init_tersembunyi_x1=161, init_tersembunyi_x2=13, jitter=340, normal=8382
+Status log-vs-pcap: cocok=8759, wajar_init_tersembunyi=141
+Residu normal loss 0%: n=2960 min=9.7 median=11.8 max=15.9 ms
+Residu normal loss >0%: n=5422 min=9.3 median=11.8 max=16.0 ms
+Run loss 0% dengan residu di luar 8-16 ms: 140 dari 3100 (jitter=140, anomali=0)
+Run tersembunyi (paket pertama IKE_SA_INIT jatuh di egress): 174
+
+PEMERIKSAAN GAGAL: 4
+ - batch 10: 0 run tak terjelaskan, 1 run anomali
+ - batch 18: 0 run tak terjelaskan, 1 run anomali
+ - batch 73: 0 run tak terjelaskan, 1 run anomali
+ - batch 80: 0 run tak terjelaskan, 1 run anomali
+HASIL: ADA TEMUAN - periksa daftar di atas

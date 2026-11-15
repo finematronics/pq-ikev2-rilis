@@ -1,0 +1,126 @@
+**********************
+Windows PowerShell transcript start
+Start time: 20261114095719
+Username: <HOST_PENELITI>\<USER>
+RunAs User: <HOST_PENELITI>\<USER>
+Configuration Name: 
+Machine: <HOST_PENELITI> (Microsoft Windows NT 10.0.21996.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File C:\Users\<USER>\Downloads\pilot-tuning.ps1
+Process ID: 8276
+PSVersion: 5.1.21996.1
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.21996.1
+BuildVersion: 10.0.21996.1
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+IP initiator: 10.97.0.149, responder: 10.97.0.206
+
+== Pilot 2: default vs optimized, 20 run per kombinasi ==
+
+Saturday, November 14, 2026 9:57:19 AM
+-- membersihkan: netem dihapus, MTU 1500, parameter charon kembali default --
+
+
+
+
+### MTU1500_loss0_default  (fragment_size=1280, retransmit_timeout=4.0, retransmit_tries=5)
+
+
+
+
+
+
+   sukses 20/20, paket IKE total=180, paket fragmen=40
+
+### MTU1500_loss0_optimized  (fragment_size=1472, retransmit_timeout=3.0, retransmit_tries=3)
+
+
+
+
+
+
+   sukses 20/20, paket IKE total=160, paket fragmen=0
+
+### MTU1500_loss5_default  (fragment_size=1280, retransmit_timeout=4.0, retransmit_tries=5)
+
+
+
+
+
+
+   sukses 20/20, paket IKE total=193, paket fragmen=46
+
+### MTU1500_loss5_optimized  (fragment_size=1472, retransmit_timeout=3.0, retransmit_tries=3)
+
+
+
+
+
+
+   sukses 20/20, paket IKE total=164, paket fragmen=0
+
+### MTU1280_loss0_default  (fragment_size=1280, retransmit_timeout=4.0, retransmit_tries=5)
+
+
+
+
+
+
+   sukses 20/20, paket IKE total=180, paket fragmen=40
+
+### MTU1280_loss0_optimized  (fragment_size=1252, retransmit_timeout=3.0, retransmit_tries=3)
+
+
+
+
+
+
+   sukses 20/20, paket IKE total=180, paket fragmen=40
+
+### MTU1280_loss5_default  (fragment_size=1280, retransmit_timeout=4.0, retransmit_tries=5)
+
+
+
+
+
+
+   sukses 20/20, paket IKE total=189, paket fragmen=47
+
+### MTU1280_loss5_optimized  (fragment_size=1252, retransmit_timeout=3.0, retransmit_tries=3)
+
+
+
+
+
+
+   sukses 20/20, paket IKE total=184, paket fragmen=44
+-- membersihkan: netem dihapus, MTU 1500, parameter charon kembali default --
+
+
+
+
+================ RINGKASAN (waktu dalam ms, hanya run sukses) ================
+
+
+
+kondisi       konfigurasi sukses median_ms rata2_ms maks_ms
+-------       ----------- ------ --------- -------- -------
+MTU1500_loss0 default     20/20        197      194     209
+MTU1500_loss0 optimized   20/20        194      192     217
+MTU1500_loss5 default     20/20        200     2512   11398
+MTU1500_loss5 optimized   20/20        203     1242    3203
+MTU1280_loss0 default     20/20        190      191     209
+MTU1280_loss0 optimized   20/20        191      190     213
+MTU1280_loss5 default     20/20        194     1387    4198
+MTU1280_loss5 optimized   20/20        199      940    3199
+
+
+
+SELESAI. Hasil: C:\Users\<USER>\Documents\pq-ikev2\03_pilot\pilot2-tuning.txt dan C:\Users\<USER>\Documents\pq-ikev2\03_pilot\pilot2-tuning.csv
+**********************
+Windows PowerShell transcript end
+End time: 20261114100526
+**********************

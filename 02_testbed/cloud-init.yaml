@@ -1,0 +1,12 @@
+#cloud-config
+package_update: true
+packages:
+  - strongswan
+  - strongswan-pki
+  - libcharon-extra-plugins
+  - iperf3
+  - mtr-tiny
+  - tcpdump
+  - iproute2
+runcmd:
+  - echo "VM Testbed PQ-IKEv2 Berhasil Dimuat!" > /etc/motd

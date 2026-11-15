@@ -1,0 +1,237 @@
+**********************
+Windows PowerShell transcript start
+Start time: 20261114121905
+Username: Testbed-Host-VM\researcher
+RunAs User: Testbed-Host-VM\researcher
+Configuration Name: 
+Machine: Testbed-Host-VM (Microsoft Windows NT 10.0.21996.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 16768
+PSVersion: 5.1.21996.1
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.21996.1
+BuildVersion: 10.0.21996.1
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+== Eksperimen PQ-IKEv2: set 'uji', folder C:\Users\researcher\Documents\pq-ikev2\03_pilot\uji-20261114-1219 ==
+PENTING: Jangan klik di dalam area biru jendela PowerShell agar tidak masuk mode Select (Pause).
+IP aktif -> initiator: 10.97.0.149, responder: 10.97.0.206
+
+
+Rencana baru dibuat: 6 skenario, seed pengacakan = 463142.
+-- reset: netem dihapus, MTU 1500, parameter default, proposal hybrid --
+
+### [1/6] 001_MTU1280_loss5_rtt100_hybrid-default  (fragment_size=1280, timeout=4.0s, tries=5, delay=50ms/arah, loss=5%/arah, n=20)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 20 handshake:
+1(324ms)
+.
+.
+.
+5(338ms)
+.
+.
+.
+.
+10(333ms)
+.
+.
+.
+.
+15(323ms)
+.
+.
+.
+.
+20(321ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (20/20), median: 2329 ms, p95: 4332.4 ms [CI95: 0..0], retrans: 0, frag_IKE: 42, CPU: 0.18s/0.1s, QC: OK
+
+### [2/6] 002_MTU1500_loss0_rtt10_hybrid-default  (fragment_size=1280, timeout=4.0s, tries=5, delay=5ms/arah, loss=0%/arah, n=20)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 20 handshake:
+1(54ms)
+.
+.
+.
+5(50ms)
+.
+.
+.
+.
+10(52ms)
+.
+.
+.
+.
+15(61ms)
+.
+.
+.
+.
+20(50ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (20/20), median: 51.5 ms, p95: 61.05 ms [CI95: 0..0], retrans: 0, frag_IKE: 40, CPU: 0.16s/0.08s, QC: OK
+
+### [3/6] 003_MTU1280_loss5_rtt100_hybrid-optimized  (fragment_size=1252, timeout=3.0s, tries=3, delay=50ms/arah, loss=5%/arah, n=20)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 20 handshake:
+1(354ms)
+.
+.
+.
+5(321ms)
+.
+.
+.
+.
+10(323ms)
+.
+.
+.
+.
+15(3325ms)
+.
+.
+.
+.
+20(319ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (20/20), median: 324 ms, p95: 3333.55 ms [CI95: 0..0], retrans: 0, frag_IKE: 41, CPU: 0.19s/0.09s, QC: OK
+
+### [4/6] 004_MTU1280_loss5_rtt100_klasik  (fragment_size=1280, timeout=4.0s, tries=5, delay=50ms/arah, loss=5%/arah, n=20)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 20 handshake:
+1(223ms)
+.
+.
+.
+5(228ms)
+.
+.
+.
+.
+10(234ms)
+.
+.
+.
+.
+15(226ms)
+.
+.
+.
+.
+20(217ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (20/20), median: 223 ms, p95: 4219.05 ms [CI95: 0..0], retrans: 0, frag_IKE: 0, CPU: 0.18s/0.09s, QC: OK
+
+### [5/6] 005_MTU1500_loss0_rtt10_klasik  (fragment_size=1280, timeout=4.0s, tries=5, delay=5ms/arah, loss=0%/arah, n=20)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 20 handshake:
+1(49ms)
+.
+.
+.
+5(43ms)
+.
+.
+.
+.
+10(38ms)
+.
+.
+.
+.
+15(38ms)
+.
+.
+.
+.
+20(61ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (20/20), median: 46 ms, p95: 76.95 ms [CI95: 0..0], retrans: 0, frag_IKE: 0, CPU: 0.19s/0.1s, QC: OK
+
+### [6/6] 006_MTU1500_loss0_rtt10_hybrid-optimized  (fragment_size=1472, timeout=3.0s, tries=3, delay=5ms/arah, loss=0%/arah, n=20)
+    [1/4] Menerapkan konfigurasi strongSwan & MTU pada kedua VM...
+ siap.
+    [2/4] Memulai tcpdump dua sisi & memasang tc netem...
+ aktif.
+    [3/4] Menjalankan 20 handshake:
+1(58ms)
+.
+.
+.
+5(52ms)
+.
+.
+.
+.
+10(58ms)
+.
+.
+.
+.
+15(55ms)
+.
+.
+.
+.
+20(71ms)
+
+    [4/4] Mengambil PCAP, log charon, pidstat & menjalankan QC...
+ selesai.
+    => SR: 100% (20/20), median: 55 ms, p95: 78.4 ms [CI95: 0..0], retrans: 0, frag_IKE: 0, CPU: 0.18s/0.1s, QC: OK
+-- reset: netem dihapus, MTU 1500, parameter default, proposal hybrid --
+
+================ RINGKASAN BATCH (uji) ================
+
+idx kondisi              konfigurasi      valid success_rate_persen median_ms p95_ms  p95_ci_bawah p95_ci_atas rata_retransmisi
+--- -------              -----------      ----- ------------------- --------- ------  ------------ ----------- ----------------
+1   MTU1280_loss5_rtt100 hybrid-default   20/20 100                 2329      4332.4  0            0           0
+2   MTU1500_loss0_rtt10  hybrid-default   20/20 100                 51.5      61.05   0            0           0
+3   MTU1280_loss5_rtt100 hybrid-optimized 20/20 100                 324       3333.55 0            0           0
+4   MTU1280_loss5_rtt100 klasik           20/20 100                 223       4219.05 0            0           0
+5   MTU1500_loss0_rtt10  klasik           20/20 100                 46        76.95   0            0           0
+6   MTU1500_loss0_rtt10  hybrid-optimized 20/20 100                 55        78.4    0            0           0
+
+
+Rata-rata per run: ringan 1.14 s, terberat 3.08 s, tertimbang 2.06 s; overhead per skenario 27.1 s
+ESTIMASI total 81 skenario x 100 run: sekitar 3.17 sampai 5.25 jam (maks 7.55 jam)
+>> Dokumen CONFIG_FREEZE.md berhasil diperbarui di: C:\Users\researcher\Documents\pq-ikev2\03_pilot\CONFIG_FREEZE.md
+
+Batch dikerjakan pada sesi ini : 6
+Batch dengan catatan QC        : 0
+Durasi sesi                    : 7.1 menit
+SELESAI. Data: C:\Users\researcher\Documents\pq-ikev2\03_pilot\uji-20261114-1219
+**********************
+Windows PowerShell transcript end
+End time: 20261114122622
+**********************

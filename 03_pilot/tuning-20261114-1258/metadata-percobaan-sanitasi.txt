@@ -1,0 +1,59 @@
+Peneliti: Rafi Rachman
+Tanggal: 2026-11-14T12:58:22.9679404+07:00
+Set: tuning; seed: 608158
+Host: Testbed-Host-VM; Microsoft Windows 11 Pro
+CPU host: Intel(R) Core(TM) i5-8365U CPU @ 1.60GHz; logis: 8
+RAM host (GB): 15.7
+Multipass: multipass   1.17.0+win multipassd  1.17.0+win
+--- VM initiator ---
+Name:           initiator
+State:          Running
+Zone:           zone1
+Snapshots:      0
+IPv4:           10.97.0.149
+Release:        Ubuntu 24.04.5 LTS
+Image hash:     04e8f2461a16 (Ubuntu 24.04 LTS)
+CPU(s):         2
+Load:           0.00 0.00 0.00
+Disk usage:     3.9GiB out of 9.6GiB
+Memory usage:   376.1MiB out of 1.9GiB
+Mounts:         --
+
+kernel: 6.8.0-147-generic
+os: Ubuntu 24.04.5 LTS
+strongswan: strongSwan swanctl 6.0.2
+openssl: OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025)
+tshark: Running as user "root" and group "root". This could be dangerous.
+tcpdump: tcpdump version 4.99.4
+pidstat: sysstat version 12.6.1
+tc: tc utility, iproute2-6.1.0, libbpf 1.3.0
+vcpu: 2
+memori: Mem:            1902         416         407           0        1271        1486
+charon: pid=46471 proses=charon-systemd
+
+--- VM responder ---
+Name:           responder
+State:          Running
+Zone:           zone1
+Snapshots:      0
+IPv4:           10.97.0.206
+Release:        Ubuntu 24.04.5 LTS
+Image hash:     04e8f2461a16 (Ubuntu 24.04 LTS)
+CPU(s):         2
+Load:           0.00 0.00 0.00
+Disk usage:     3.9GiB out of 9.6GiB
+Memory usage:   382.0MiB out of 1.9GiB
+Mounts:         --
+
+kernel: 6.8.0-147-generic
+os: Ubuntu 24.04.5 LTS
+strongswan: strongSwan swanctl 6.0.2
+openssl: OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025)
+tshark: Running as user "root" and group "root". This could be dangerous.
+tcpdump: tcpdump version 4.99.4
+pidstat: sysstat version 12.6.1
+tc: tc utility, iproute2-6.1.0, libbpf 1.3.0
+vcpu: 2
+memori: Mem:            1902         389         438           0        1266        1512
+charon: pid=27448 proses=charon-systemd
+

@@ -1,0 +1,52 @@
+{
+    "peneliti":  "Rafi Rachman (NIM 2407187)",
+    "set":  "ablation",
+    "seed":  93562,
+    "urutan_acak":  7,
+    "mulai":  "2026-11-14T14:51:12.6178445+07:00",
+    "selesai":  "2026-11-14T14:56:56.9374489+07:00",
+    "testbed":  "<HOST_PENELITI>; VM initiator 10.97.0.149, responder 10.97.0.206 (lihat metadata-percobaan.txt)",
+    "kondisi":  {
+                    "mtu":  1500,
+                    "loss_persen_per_arah":  5,
+                    "rtt_ms":  50,
+                    "delay_netem_per_arah_ms":  25
+                },
+    "konfigurasi":  {
+                        "nama":  "hybrid-plusA",
+                        "proposal_mode":  "hybrid",
+                        "fragment_size":  "1472",
+                        "retransmit_timeout":  "4.0",
+                        "retransmit_tries":  "5"
+                    },
+    "hasil_ringkas":  {
+                          "run_valid":  100,
+                          "ok":  100,
+                          "gagal_desain":  0,
+                          "invalid_teknis":  0,
+                          "percobaan_total":  100,
+                          "success_rate_persen":  100,
+                          "median_ms":  169,
+                          "p95_ms":  4370.85,
+                          "bootstrap_ci95_p95":  [
+                                                     4170,
+                                                     11569
+                                                 ],
+                          "ci_lebar_ms":  7399,
+                          "rata_retransmisi":  0.34,
+                          "rata_bytes_per_run":  4193,
+                          "total_paket_fragmen_ike":  0,
+                          "total_paket_fragmen_ip":  0
+                      },
+    "cpu_charon_detik":  {
+                             "initiator":  0.66,
+                             "responder":  0.32
+                         },
+    "beban_cpu_host_persen":  {
+                                  "awal":  2,
+                                  "akhir":  1
+                              },
+    "qc":  "OK",
+    "qc_initiator":  "QC,ok,818,100,100,0,3384,0,0,419287",
+    "qc_responder":  "QC,ok,818,100,100,0,3156,0,0,419287"
+}

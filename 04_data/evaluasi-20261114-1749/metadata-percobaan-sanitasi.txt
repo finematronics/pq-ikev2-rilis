@@ -1,0 +1,60 @@
+Peneliti: Rafi Rachman
+Tanggal: 2026-11-14T17:50:03.1547385+07:00
+Set: evaluasi; seed: 11680
+Host: Testbed-Host-ThinkPad; Microsoft Windows 11 Pro
+CPU host: Intel(R) Core(TM) i5-8365U CPU @ 1.60GHz; logis: 8
+RAM host (GB): 15.7
+Multipass: multipass   1.17.0+win multipassd  1.17.0+win
+--- VM initiator ---
+Name:           initiator
+State:          Running
+Zone:           zone1
+Snapshots:      0
+IPv4:           10.97.0.149
+Release:        Ubuntu 24.04.5 LTS
+Image hash:     04e8f2461a16 (Ubuntu 24.04 LTS)
+CPU(s):         2
+Load:           0.00 0.00 0.00
+Disk usage:     3.9GiB out of 9.6GiB
+Memory usage:   378.0MiB out of 1.9GiB
+Mounts:         --
+
+kernel: 6.8.0-147-generic
+os: Ubuntu 24.04.5 LTS
+strongswan: strongSwan swanctl 6.0.2
+openssl: OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025)
+tshark: Running as user "root" and group "root". This could be dangerous.
+tcpdump: tcpdump version 4.99.4
+pidstat: sysstat version 12.6.1
+tc: tc utility, iproute2-6.1.0, libbpf 1.3.0
+vcpu: 2
+memori: Mem:            1902         422         351           0        1320        1479
+charon: pid=161055 proses=charon-systemd
+
+--- VM responder ---
+Name:           responder
+State:          Running
+Zone:           zone1
+Snapshots:      0
+IPv4:           10.97.0.206
+Release:        Ubuntu 24.04.5 LTS
+Image hash:     04e8f2461a16 (Ubuntu 24.04 LTS)
+CPU(s):         2
+Load:           0.00 0.00 0.00
+Disk usage:     3.9GiB out of 9.6GiB
+Memory usage:   383.2MiB out of 1.9GiB
+Mounts:         --
+
+kernel: 6.8.0-147-generic
+os: Ubuntu 24.04.5 LTS
+strongswan: strongSwan swanctl 6.0.2
+openssl: OpenSSL 3.5.0 8 Apr 2025 (Library: OpenSSL 3.5.0 8 Apr 2025)
+tshark: Running as user "root" and group "root". This could be dangerous.
+tcpdump: tcpdump version 4.99.4
+pidstat: sysstat version 12.6.1
+tc: tc utility, iproute2-6.1.0, libbpf 1.3.0
+vcpu: 2
+memori: Mem:            1902         417         363           0        1314        1484
+charon: pid=49929 proses=charon-systemd
+
+SHA-256 jalankan-eksperimen.ps1: AB39D928848EF01B2CF7E6EA3235A66F5A30A05E3DCFEDE8590BC459564CC85B

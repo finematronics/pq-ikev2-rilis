@@ -1,0 +1,52 @@
+RINGKASAN ANALISIS STATISTIK (otomatis)
+Sumber: EVALUASI-semua-8900-runs.csv (8.900 run). Seed bootstrap 11680, B = 10000.
+
+RQ1 - ART-ANOVA per konfigurasi
+     konfigurasi         efek  df  df_galat     F          p
+          klasik          MTU   2      2673 90.96  6.062e-39
+          klasik         loss   2      2673 229.3  1.202e-92
+          klasik          RTT   2      2673 164.6  3.797e-68
+          klasik     MTU:loss   4      2673 22.12  5.531e-18
+          klasik      MTU:RTT   4      2673 41.22  1.432e-33
+          klasik     loss:RTT   4      2673 17.64  2.657e-14
+          klasik MTU:loss:RTT   8      2673 15.77  6.488e-23
+  hybrid-default          MTU   2      2673 15.64   1.76e-07
+  hybrid-default         loss   2      2673 125.5  8.022e-53
+  hybrid-default          RTT   2      2673 110.4  8.252e-47
+  hybrid-default     MTU:loss   4      2673 16.08  5.164e-13
+  hybrid-default      MTU:RTT   4      2673 20.84  6.178e-17
+  hybrid-default     loss:RTT   4      2673 16.93  1.019e-13
+  hybrid-default MTU:loss:RTT   8      2673 14.28    1.5e-20
+hybrid-optimized          MTU   2      2673 67.84  1.825e-29
+hybrid-optimized         loss   2      2673 301.9 6.337e-119
+hybrid-optimized          RTT   2      2673 304.3 8.767e-120
+hybrid-optimized     MTU:loss   4      2673 20.65  8.823e-17
+hybrid-optimized      MTU:RTT   4      2673 27.67  1.529e-22
+hybrid-optimized     loss:RTT   4      2673 16.88  1.133e-13
+hybrid-optimized MTU:loss:RTT   8      2673 15.81  5.564e-23
+
+RQ1 - Kruskal-Wallis per faktor
+     konfigurasi faktor     H          p    n
+          klasik    MTU 4.436     0.1088 2700
+          klasik   loss 91.87  1.121e-20 2700
+          klasik    RTT  1758          0 2700
+  hybrid-default    MTU 3.363     0.1861 2700
+  hybrid-default   loss 172.7   3.17e-38 2700
+  hybrid-default    RTT  1337 4.317e-291 2700
+hybrid-optimized    MTU 7.642    0.02191 2700
+hybrid-optimized   loss 190.8  3.745e-42 2700
+hybrid-optimized    RTT  1516          0 2700
+
+Perbandingan terencana, kondisi kritis (MTU 1280; loss 5%)
+                         keluarga                A                B  MTU  loss  RTT  nA  nB      arah  rata2_A  rata2_B  median_A  median_B  retx_A_persen  retx_B_persen     MWU_p  cliff_delta_A_vs_B sukses_A sukses_B  Fisher_p  cohen_h  MWU_p_Holm
+H1(2)/H1(1): optimized vs default hybrid-optimized   hybrid-default 1280     5   10 100 100      less    910.9     1867      51.5        50             33             34   0.09714             -0.1055  100/100  100/100         1        0      0.2914
+H1(2)/H1(1): optimized vs default hybrid-optimized   hybrid-default 1280     5   50 100 100      less    898.1     1857       170       169             28             34    0.9706              0.1524  100/100  100/100         1        0           1
+H1(2)/H1(1): optimized vs default hybrid-optimized   hybrid-default 1280     5  100 100 100      less    842.2     2169       322       319             25             31    0.8242              0.0749  100/100  100/100         1        0           1
+  H0(3): klasik vs hybrid-default           klasik   hybrid-default 1280     5   10 100 100 two-sided    954.1     1867        39        50             21             34 1.985e-09             -0.4901  100/100  100/100         1        0   1.985e-09
+  H0(3): klasik vs hybrid-default           klasik   hybrid-default 1280     5   50 100 100 two-sided    757.8     1857       117       169             16             34 3.109e-22             -0.7888  100/100  100/100         1        0   9.328e-22
+  H0(3): klasik vs hybrid-default           klasik   hybrid-default 1280     5  100 100 100 two-sided     1240     2169       216       319             22             31 2.455e-17              -0.686  100/100  100/100         1        0    4.91e-17
+H0(3): klasik vs hybrid-optimized           klasik hybrid-optimized 1280     5   10 100 100 two-sided    954.1    910.9        39      51.5             21             33 8.925e-07             -0.4016  100/100  100/100         1        0   8.925e-07
+H0(3): klasik vs hybrid-optimized           klasik hybrid-optimized 1280     5   50 100 100 two-sided    757.8    898.1       117       170             16             28 9.979e-18             -0.6992  100/100  100/100         1        0   2.994e-17
+H0(3): klasik vs hybrid-optimized           klasik hybrid-optimized 1280     5  100 100 100 two-sided     1240    842.2       216       322             22             25 4.038e-12              -0.564  100/100  100/100         1        0   8.076e-12
+
+Berkas lain: STAT-RQ1-Dunn-Holm.csv, STAT-RQ3-ablasi.csv, STAT-eksploratori-*.csv
