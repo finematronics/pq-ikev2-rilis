@@ -103,3 +103,6 @@ Satu batch per sel kondisi; uji peringkat peka terhadap offset batch sekitar 1 m
 ## Keamanan
 
 Kunci pra-bagi (PSK) pada berkas konfigurasi telah diganti `<PSK_LAB_DIGANTI>`. PSK laboratorium hanya dipakai pada testbed terisolasi.
+## Lisensi
+
+Skrip: MIT (`LICENSE`). Data dan dokumen: CC BY 4.0 (`LICENSE-DATA.md`).
