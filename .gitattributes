@@ -6,3 +6,4 @@
 *.conf text eol=lf
 *.pcap binary
 05_analisis/VALIDASI-pcap-ringkasan.txt -text
+03_pilot/CONFIG_FREEZE.md -text
