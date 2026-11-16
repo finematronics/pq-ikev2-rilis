@@ -9,3 +9,6 @@ LAPORAN_*.md
 SAMPEL-4-PCAP.csv
 05_analisis/cache-tshark/
 05_analisis/*-sebagian*
+
+# Pengecualian: masukan resmi analisis (hash terkunci)
+!04_data/EVALUASI-semua-8900-runs.csv
